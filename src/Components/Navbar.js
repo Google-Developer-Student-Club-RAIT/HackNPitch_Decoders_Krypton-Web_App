@@ -4,7 +4,7 @@ export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     return (
-      <div class="bg-gray-900">
+      <div class="bg-black">
         <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <a
@@ -13,10 +13,10 @@ export const Nav = () => {
               title="Company"
               class="inline-flex items-center"
             >
-
-              <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
+              <img class=" h-8 w-full" src="/kryptonlogo1.png" alt=""/>
+              {/* {<span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
                 Krypton
-              </span>
+              </span> } */}
             </a>
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li>
@@ -24,9 +24,9 @@ export const Nav = () => {
                   href="/"
                   aria-label="Our product"
                   title="Our product"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-medium text-white no-underline hover:text-yellow-500 transition-colors"
                 >
-                  Product
+                  Home
                 </a>
               </li>
               <li>
@@ -34,9 +34,9 @@ export const Nav = () => {
                   href="/"
                   aria-label="Our product"
                   title="Our product"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-medium text-white no-underline hover:text-yellow-500 transition-colors"
                 >
-                  Features
+                  Services
                 </a>
               </li>
               <li>
@@ -44,9 +44,9 @@ export const Nav = () => {
                   href="/"
                   aria-label="Product pricing"
                   title="Product pricing"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-medium text-white no-underline hover:text-yellow-500 transition-colors"
                 >
-                  Pricing
+                  About
                 </a>
               </li>
               <li>
@@ -54,9 +54,9 @@ export const Nav = () => {
                   href="/"
                   aria-label="About us"
                   title="About us"
-                  class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                  class="font-medium text-white no-underline hover:text-yellow-500 transition-colors"
                 >
-                  About us
+                  Contact
                 </a>
               </li>
             </ul>
@@ -64,11 +64,21 @@ export const Nav = () => {
               <li>
                 <a
                   href="/"
-                  class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                  class="inline-flex items-center justify-center h-12 px-3 font-medium tracking-wide text-white hover:text-yellow-500 "
                   aria-label="Sign up"
                   title="Sign up"
                 >
-                  Sign up
+                  Login
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/"
+                  class="inline-flex items-center justify-center h-12 px-3 font-medium tracking-wide bg-white hover:text-yellow-500"
+                  aria-label="Sign up"
+                  title="Sign up"
+                >
+                  Register
                 </a>
               </li>
             </ul>
