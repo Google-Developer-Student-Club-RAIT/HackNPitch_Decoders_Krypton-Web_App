@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Hamburger from "../Assets/svg/Hamburger";
 
 export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,9 +15,6 @@ export const Nav = () => {
               class="inline-flex items-center"
             >
               <img class=" h-8 w-full" src="/kryptonlogo1.png" alt=""/>
-              {/* {<span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                Krypton
-              </span> } */}
             </a>
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li>
@@ -71,10 +69,10 @@ export const Nav = () => {
                   Login
                 </a>
               </li>
-              <li>
+              <li className = "z-50">
                 <a
                   href="/"
-                  class="inline-flex items-center justify-center h-12 px-3 font-medium tracking-wide bg-white hover:text-yellow-500"
+                  class="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide bg-yellow-600 hover:text-yellow-500 rounded-full z-50"
                   aria-label="Sign up"
                   title="Sign up"
                 >
@@ -89,23 +87,10 @@ export const Nav = () => {
                 class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline"
                 onClick={() => setIsMenuOpen(true)}
               >
-                <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
-                  <path
-                    fill="currentColor"
-                    d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
-                  />
-                  <path
-                    fill="currentColor"
-                    d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"
-                  />
-                  <path
-                    fill="currentColor"
-                    d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"
-                  />
-                </svg>
+                <Hamburger/>
               </button>
               {isMenuOpen && (
-                <div class="absolute top-0 left-0 w-full">
+                <div class="absolute top-0 left-0 w-full z-50">
                   <div class="p-5 bg-white border rounded shadow-sm">
                     <div class="flex items-center justify-between mb-4">
                       <div>
@@ -115,21 +100,6 @@ export const Nav = () => {
                           title="Company"
                           class="inline-flex items-center"
                         >
-                          <svg
-                            class="w-8 text-deep-purple-accent-400"
-                            viewBox="0 0 24 24"
-                            strokeLinejoin="round"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeMiterlimit="10"
-                            stroke="currentColor"
-                            fill="none"
-                          >
-                            <rect x="3" y="1" width="7" height="12" />
-                            <rect x="3" y="17" width="7" height="6" />
-                            <rect x="14" y="1" width="7" height="6" />
-                            <rect x="14" y="11" width="7" height="12" />
-                          </svg>
                           <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                             Krypton
                           </span>
