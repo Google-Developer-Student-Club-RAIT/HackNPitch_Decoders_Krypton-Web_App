@@ -15,15 +15,15 @@ export const Contact = () => {
             </div>
             <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
               <div className="relative">
-                <div className="relative bg-gray-200 rounded shadow-2xl p-7 sm:p-10">
-                  <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
+                <div className="relative bg-white bg-opacity-10 rounded shadow-2xl p-7 sm:p-10">
+                  <h3 className="mb-4 text-xl text-white font-semibold sm:text-center sm:mb-6 sm:text-2xl ">
                     Contact Us 
                   </h3>
                   <form>
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="name"
-                        className="inline-block mb-1 font-medium"
+                        className="inline-block mb-1 font-medium text-white"
                       >
                         Name
                       </label>
@@ -31,7 +31,7 @@ export const Contact = () => {
                         placeholder="Name"
                         required
                         type="text"
-                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-gray-200 border border-gray-300 rounded shadow-sm appearance-none focus:outline-none focus:shadow-outline"
                         id="name"
                         name="name"
                       />
@@ -39,7 +39,7 @@ export const Contact = () => {
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="email"
-                        className="inline-block mb-1 font-medium"
+                        className="inline-block mb-1 font-medium text-white"
                       >
                         E-mail
                       </label>
@@ -47,7 +47,7 @@ export const Contact = () => {
                         placeholder="xyz@mail.com"
                         required
                         type="text"
-                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-gray-200 border border-gray-300 rounded shadow-sm appearance-none focus:outline-none focus:shadow-outline"
                         id="email"
                         name="email"
                       />
@@ -55,7 +55,7 @@ export const Contact = () => {
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="email"
-                        className="inline-block mb-1 font-medium"
+                        className="inline-block mb-1 font-medium text-white"
                       >
                         Message
                       </label>
@@ -63,7 +63,7 @@ export const Contact = () => {
                         placeholder=""
                         required
                         type="text"
-                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-gray-200 border border-gray-300 rounded shadow-sm appearance-none focus:outline-none focus:shadow-outline"
                         id="name"
                         name=""
                       />
@@ -71,7 +71,7 @@ export const Contact = () => {
                     <div className="mt-4 mb-2 sm:mb-4">
                       <button
                         type="submit"
-                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide bg-white text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none "
                       >
                         Send
                       </button>

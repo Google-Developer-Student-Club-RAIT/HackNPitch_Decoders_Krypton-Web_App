@@ -49,19 +49,18 @@ export const About = () => {
           </div>
         </div>
         <div className="relative px-4 sm:px-0">
-          <div className="absolute inset-0 bg-black h-1/2" />
-          <div className=" glass relative grid mx-auto overflow-hidden bg-gray-200 divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm">
-            <h2 className="flex items-center justify-center md:text-lg mt-2 text-center" >GET WEEKLY INSIGHTS AND FACTS RIGHT IN YOUR INBOX</h2>
-          <form className="flex flex-col items-center w-full mb-4 mt- md:flex-row md:px-10">
+          <div className="relative grid mx-auto overflow-hidden  divide-y rounded  sm:divide-x sm:max-w-screen-sm bg-white bg-opacity-10 ">
+            <h2 className="flex items-center justify-center md:text-lg mt-2 text-center z-40 text-white py-4" >GET WEEKLY INSIGHTS AND FACTS RIGHT IN YOUR INBOX</h2>
+      <form className="flex flex-col items-center w-full mb-4 mt- md:flex-row md:px-10 border-opacity-0">
         <input
           placeholder="Email"
           required=""
           type="text"
-          className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-whitw border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+          className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-gray-200 border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0  focus:outline-none focus:shadow-outline "
         />
         <button
           type="submit"
-          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black bg-gray-200 transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
         >
           Subscribe
         </button>

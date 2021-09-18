@@ -5,7 +5,7 @@ export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     return (
-      <div class="bg-black">
+      <div class="bg-black sticky top-0 z-50">
         <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div class="relative flex items-center justify-between">
             <a
@@ -22,7 +22,7 @@ export const Nav = () => {
                   href="/"
                   aria-label="Our product"
                   title="Our product"
-                  class="font-medium text-white no-underline hover:text-yellow-500 transition-colors"
+                  class="font-medium text-white no-underline hover:text-yellow-300 transition-colors"
                 >
                   Home
                 </a>
@@ -32,7 +32,7 @@ export const Nav = () => {
                   href="/"
                   aria-label="Our product"
                   title="Our product"
-                  class="font-medium text-white no-underline hover:text-yellow-500 transition-colors"
+                  class="font-medium text-white no-underline hover:text-yellow-300 transition-colors"
                 >
                   Services
                 </a>
@@ -42,7 +42,7 @@ export const Nav = () => {
                   href="/"
                   aria-label="Product pricing"
                   title="Product pricing"
-                  class="font-medium text-white no-underline hover:text-yellow-500 transition-colors"
+                  class="font-medium text-white no-underline hover:text-yellow-300 transition-colors"
                 >
                   About
                 </a>
@@ -52,7 +52,7 @@ export const Nav = () => {
                   href="/"
                   aria-label="About us"
                   title="About us"
-                  class="font-medium text-white no-underline hover:text-yellow-500 transition-colors"
+                  class="font-medium text-white no-underline hover:text-yellow-300 transition-colors"
                 >
                   Contact
                 </a>
@@ -62,7 +62,7 @@ export const Nav = () => {
               <li>
                 <a
                   href="/"
-                  class="inline-flex items-center justify-center h-12 px-3 font-medium tracking-wide text-white hover:text-yellow-500 "
+                  class="inline-flex items-center justify-center h-12 px-3 font-medium tracking-wide text-white hover:text-yellow-300 "
                   aria-label="Sign up"
                   title="Sign up"
                 >
@@ -72,7 +72,7 @@ export const Nav = () => {
               <li className = "z-50">
                 <a
                   href="/"
-                  class="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide bg-yellow-400 text-white hover:text-yellow-700 rounded-full z-50"
+                  class="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide bg-yellow-300 text-black hover:text-black hover:bg-white rounded-full z-50"
                   aria-label="Sign up"
                   title="Sign up"
                 >
@@ -166,7 +166,7 @@ export const Nav = () => {
                         <li>
                           <a
                             href="/"
-                            class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                            class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none border border-black "
                             aria-label="Sign up"
                             title="Sign up"
                           >
@@ -176,7 +176,7 @@ export const Nav = () => {
                         <li>
                           <a
                             href="/"
-                            class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                            class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none border border-black"
                             aria-label="Sign up"
                             title="Sign up"
                           >
