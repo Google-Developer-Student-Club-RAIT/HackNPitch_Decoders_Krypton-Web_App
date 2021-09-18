@@ -7,7 +7,7 @@ export const Content = () => {
         <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-32 lg:py-20 lg:max-w-screen-xl">
           <div className="mb-0 lg:max-w-lg lg:pr-11 xl:pr-6">
          
-            <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl  ">
+            <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl  md:py-2">
               Meet The New Standard For 
               <br className="hidden md:block " />
               Personal Finance Management
@@ -27,7 +27,7 @@ export const Content = () => {
             </div>
           </div>
         </div>
-         <div className="inset-y-0 top-0 right-60 px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/4 lg:absolute xl:px-0">
+         <div className="inset-y-0 top-0 right-60 px-4 mx-auto mb-6 md:px-0 lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 md:w-1/3  lg:w-1/4 lg:absolute xl:px-0">
          <img  src={headerImg} alt=""/>
          </div>
       </div>

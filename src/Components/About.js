@@ -51,7 +51,7 @@ export const About = () => {
         <div className="relative px-4 sm:px-0">
           <div className="absolute inset-0 bg-black h-1/2" />
           <div className=" glass relative grid mx-auto overflow-hidden bg-gray-200 divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm">
-            <h2 className="flex items-center justify-center md:text-lg mt-2" >GET WEEKLY INSIGHTS AND FACTS RIGHT IN YOUR INBOX</h2>
+            <h2 className="flex items-center justify-center md:text-lg mt-2 text-center" >GET WEEKLY INSIGHTS AND FACTS RIGHT IN YOUR INBOX</h2>
           <form className="flex flex-col items-center w-full mb-4 mt- md:flex-row md:px-10">
         <input
           placeholder="Email"
