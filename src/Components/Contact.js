@@ -1,21 +1,21 @@
 export const Contact = () => {
     return (
-      <div className="overflow-hidden bg-gray-900">
+      <div className="overflow-hidden bg-black">
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
             <div className="w-full max-w-xl mb-12 xl:pr-16 xl:mb-0 xl:w-7/12">
-              <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
+              <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudan, totam rem aperiam, eaque ipsa quae.
               </p>
-              <p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
+              <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudan, totam rem aperiam, eaque ipsa quae.
               </p>
             </div>
             <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
               <div className="relative">
-                <div className="relative bg-white rounded shadow-2xl p-7 sm:p-10">
+                <div className="relative bg-gray-200 rounded shadow-2xl p-7 sm:p-10">
                   <h3 className="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                     Contact Us 
                   </h3>

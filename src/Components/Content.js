@@ -12,7 +12,7 @@ export const Content = () => {
               <br className="hidden md:block " />
               Personal Finance Management
             </h2>
-            <p className="mb-5 text-base text-gray-500 md:text-lg ">
+            <p className="mb-5 text-base text-gray-500 md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae. explicabo.
@@ -20,7 +20,7 @@ export const Content = () => {
             <div className="mb-10  md:mb-16 lg:mb-20">
               <a
                 href="/"
-                className="inline-flex items-center justify-center w-full h-10 px-6 font-medium tracking-wide bg-white transition duration-200 rounded-full shadow-md md:w-auto focus:shadow-outline focus:outline-none"
+                className="inline-flex items-center justify-center w-full h-10 px-6 mt-4 font-medium tracking-wide bg-white transition duration-200 rounded-full shadow-md md:w-auto focus:shadow-outline focus:outline-none"
               >
                 Get Started
               </a>

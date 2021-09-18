@@ -8,7 +8,7 @@ import { Footer } from '../../Components/Footer';
 
 function Main() {
     return (
-        <div>
+        <div className = "bg-black ">
             <Nav />
             <Content />
             <Service />

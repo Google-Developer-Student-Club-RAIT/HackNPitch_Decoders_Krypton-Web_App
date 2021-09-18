@@ -1,7 +1,8 @@
+
 export const About = () => {
     return (
       <div className="mb-16 ">
-        <div className="bg-gray-100">
+        <div className="bg-black">
           <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
               <div>
@@ -33,14 +34,14 @@ export const About = () => {
                       height="24"
                     />
                   </svg>
-                  <span className="relative">About Us</span>
+                  <span className="relative text-white">About Us</span>
                 </span>{' '}
               </h2>
-              <p className="text-base text-gray-700 md:text-lg">
+              <p className="text-base text-gray-200 md:text-lg">
                 KRYPTON IS AN ONLINE MONEY MANAGEMENT SYSTEM WITH THE AIM OF MAKING INDIVIDUALS AWARE ABOUT THEIR EXPENDITURE
                 AND TO SHOW INVESTMENT OPPURTUNITIES, FINANCIAL NEWS AND STOCK OVERVIEW TO MAKE THEM FINANCIALLY AWARE.
               </p> <br/>
-              <p className="text-base text-gray-700 md:text-lg">
+              <p className="text-base text-gray-200 md:text-lg">
                 AIMED TOWARDS STUDENTS AND YOUNG INDIVIDUALS, THE MISSION IS TO MAKE FINANCIAL KNOWLEDGE ACCESSIBLE AND A COMMON 
                 PLACE FOR FINANCIALLY SOUND INDIVIDUALS.
               </p>
@@ -48,8 +49,8 @@ export const About = () => {
           </div>
         </div>
         <div className="relative px-4 sm:px-0">
-          <div className="absolute inset-0 bg-gray-100 h-1/2" />
-          <div className="relative grid mx-auto overflow-hidden bg-white divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm ">
+          <div className="absolute inset-0 bg-black h-1/2" />
+          <div className=" glass relative grid mx-auto overflow-hidden bg-gray-200 divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm">
             <h2 className="flex items-center justify-center md:text-lg mt-2" >GET WEEKLY INSIGHTS AND FACTS RIGHT IN YOUR INBOX</h2>
           <form className="flex flex-col items-center w-full mb-4 mt- md:flex-row md:px-10">
         <input

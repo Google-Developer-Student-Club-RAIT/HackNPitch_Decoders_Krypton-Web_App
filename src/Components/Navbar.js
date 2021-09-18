@@ -72,7 +72,7 @@ export const Nav = () => {
               <li className = "z-50">
                 <a
                   href="/"
-                  class="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide bg-yellow-600 hover:text-yellow-500 rounded-full z-50"
+                  class="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide bg-yellow-400 text-white hover:text-yellow-700 rounded-full z-50"
                   aria-label="Sign up"
                   title="Sign up"
                 >
@@ -166,11 +166,21 @@ export const Nav = () => {
                         <li>
                           <a
                             href="/"
-                            class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                            class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
                             aria-label="Sign up"
                             title="Sign up"
                           >
-                            Sign up
+                            Log In
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="/"
+                            class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                            aria-label="Sign up"
+                            title="Sign up"
+                          >
+                            Register
                           </a>
                         </li>
                       </ul>
