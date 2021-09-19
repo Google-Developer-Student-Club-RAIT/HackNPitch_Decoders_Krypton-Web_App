@@ -1,16 +1,25 @@
+import { useState } from "react";
+import Dropdown from "../Assets/svg/Dropdown";
 
 export const Dashboard = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const openMenu = () => {
+        if (isMenuOpen === false) {
+            setIsMenuOpen(true)
+        }
+        else{
+            setIsMenuOpen(false)
+        }
+    }
     return (
         <>
         <div class="flex w-screen h-screen text-gray-400 bg-black">
       
         <div class="flex flex-col w-56 border-r border-gray-800">
-            <button class="relative text-sm focus:outline-none group">
-                <div class="flex items-center justify-between w-full h-16 px-4 border-b border-gray-800">
-                    <img src="kryptonlogo1.png" alt="" />
-                </div>
-                
-            </button>
+            <div class="flex items-center justify-between w-full h-16 px-4 border-b border-gray-800">
+                <img src="kryptonlogo1.png" alt="" />
+            </div>
             <div class="flex flex-col flex-grow p-4 overflow-auto">
                 <a class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
                     <span class="leading-none">Dashboard</span>
@@ -28,7 +37,6 @@ export const Dashboard = () => {
                     <span class="leading-none">Blogs</span>
                 </a>
             </div>
-
         </div>
         <div class="flex flex-col flex-grow ">
             <div class="flex items-center h-16 px-8 border-b border-gray-800">
@@ -36,13 +44,17 @@ export const Dashboard = () => {
                 <button class="flex items-center justify-center h-10 px-4 ml-auto text-sm font-medium rounded hover:bg-gray-800">
                     User Name
                 </button>
-                <button class="relative ml-2 text-sm focus:outline-none group">
-                    <div class="flex items-center justify-between w-10 h-10 rounded hover:bg-gray-800">
-                        <svg class="w-5 h-5 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-                        </svg>
-                    </div>
+                <button class="relative ml-2 text-sm focus:outline-none group" 
+                onClick = {()=> openMenu()}>
+                    <Dropdown />
                 </button>
+            </div>
+            {/* Dropdown component */}
+            <div class={`absolute right-10 flex flex-col top-12 z-50  w-30 mt-1 pb-1 bg-gray-800 border border-gray-800 shadow-lg group-focus:flex 
+            ${isMenuOpen ? "" : "hidden" }`}>
+                    <a class="w-full px-4 py-2 text-left hover:bg-gray-900" href="#">Menu Item 1</a>
+                    <a class="w-full px-4 py-2 text-left hover:bg-gray-900" href="#">Menu Item 2</a>
+                    <a class="w-full px-4 py-2 text-left hover:bg-gray-900" href="#">Menu Item 3</a>
             </div>
             <div class="flex-grow p-6 bg-black">
                 <div class="grid grid-cols-3 grid-rows-1 grid-flow-row gap-6">

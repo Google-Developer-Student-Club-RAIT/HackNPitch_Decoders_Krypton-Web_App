@@ -1,18 +1,20 @@
 import headerImg from '../Assets/img/Illustration.png'
+import bgImg from '../Assets/img/bgxl-removebg.png'
 
 export const Content = () => {
     return (
     <div className="img-comp">
-      <div className="relative flex flex-col-reverse px-10 py-16 lg:py-0 lg:flex-col bg-black">
+      <img src={bgImg} alt="" className = "hidden lg:block lg:absolute lg:opacity-30 lg:w-3/4 "/>
+      <div className="relative flex flex-col-reverse px-10 py-16 lg:py-0 lg:flex-col ">
         <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-10 lg:py-20 lg:max-w-screen-xl">
-          <div className="mb-0 lg:max-w-lg lg:pr-11 xl:pr-6">
+          <div className="mb-0 lg:max-w-lg lg:pr-11 xl:pr-6 ">
          
-            <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl  md:py-2">
+            <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl  md:py-2 c">
               Meet The New Standard For 
               <br className="hidden md:block " />
               Personal Finance Management
             </h2>
-            <p className="mb-5 text-base text-gray-500 md:text-lg">
+            <p className="mb-5 z-50 text-base text-gray-500 md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae. explicabo.

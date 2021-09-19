@@ -1,6 +1,5 @@
 import React from 'react'
 import { Nav } from '../../Components/Navbar'
-import { Dashboard } from '../../Components/Dashboard';
 import { Content } from '../../Components/Content';
 import { Service } from '../../Components/Service';
 import {About} from '../../Components/About';
@@ -8,11 +7,11 @@ import { Contact } from '../../Components/Contact';
 import { Footer } from '../../Components/Footer';
 
 
+
 function Main() {
     return (
-        <div className = "bg-black ">
+        <div className = "bg-black">
             <Nav />
-            <Dashboard/>
             <Content />
             <Service />
             <About />

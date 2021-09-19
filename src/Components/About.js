@@ -1,7 +1,9 @@
+import bgImg from '../Assets/img/bgxl-removebg.png'
 
 export const About = () => {
     return (
-      <div className="mb-16 ">
+      <div className="mb-16 relative">
+        <img src={bgImg} alt="" className = "hidden lg:block lg:absolute lg:opacity-30 lg:w-3/4 "/>
         <div className="bg-black">
           <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -51,7 +53,7 @@ export const About = () => {
         <div className="relative px-4 sm:px-0">
           <div className="relative grid mx-auto overflow-hidden  divide-y rounded  sm:divide-x sm:max-w-screen-sm bg-white bg-opacity-10 ">
             <h2 className="flex items-center justify-center md:text-lg mt-2 text-center z-40 text-white py-4" >GET WEEKLY INSIGHTS AND FACTS RIGHT IN YOUR INBOX</h2>
-      <form className="flex flex-col items-center w-full mb-4 mt- md:flex-row md:px-10 border-opacity-0">
+      <form className="flex flex-col items-center w-full mb-4 mt- md:flex-row md:px-10 border-opacity-0 pb-4">
         <input
           placeholder="Email"
           required=""
