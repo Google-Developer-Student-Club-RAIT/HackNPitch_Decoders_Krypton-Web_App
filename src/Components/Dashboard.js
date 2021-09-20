@@ -2,6 +2,11 @@ import {getAuth, signOut } from "@firebase/auth";
 import { useEffect, useState } from "react";
 import Hamburger from '../Assets/svg/Hamburger'
 import { useHistory } from "react-router-dom";
+import { Balance } from "./Balance";
+import { TransactionList } from "./TransactionList";
+import Stock from "./Stock"
+import {Link} from 'react-router-dom'
+
 
 const Dashboard = () => {
     let history = useHistory()
@@ -38,7 +43,16 @@ const Dashboard = () => {
             setIsMenuOpen(false)
         }
     }
-    
+    const balancestyle={
+        background: "black",
+        border: "1px solid white",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+        color: "white",
+
+    }
 
     return (
         <>
@@ -52,10 +66,10 @@ const Dashboard = () => {
             </div>
             <div class="flex flex-col flex-grow p-4 overflow-auto">
                 <a class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
-                    <span class="leading-none">Dashboard</span>
+                <Link to="/dashboard"> <span class="leading-none">Dashboard</span></Link>
                 </a>
                 <a class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
-                    <span class="leading-none">E-wallet</span>
+                <Link to="/e-wallet"> <span class="leading-none">E-wallet</span></Link>
                 </a>
                 <a class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
                     <span class="leading-none">Stock Insight</span>
@@ -90,10 +104,10 @@ const Dashboard = () => {
             </div>
             <div class="flex-grow p-6 bg-black">
                 <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
-                    <div class="h-80 flex-grow lg:col-span-1 bg-white opacity-20 "></div>
-                    <div class="h-80 flex-grow lg:col-span-1 bg-white opacity-20"></div>
-                    <div class="h-80 flex-grow lg:row-span-2 bg-white opacity-20"></div>
-                    <div class="h-80 flex-grow lg:col-span-2 bg-white opacity-20"></div>
+                    <div class="h-80 flex-grow lg:col-span-1" style={balancestyle}>{<Balance />}</div>
+                    <div class="h-80 flex-grow lg:col-span-1 bg-black" style={balancestyle}>{<TransactionList/>}</div>
+                    <div class="h-140 flex-grow lg:row-span-2 bg-black" style={balancestyle}></div>
+                    <div class="h-75 flex-grow lg:col-span-2">{<Stock />}</div>
                 </div>
             </div>
         </div>
