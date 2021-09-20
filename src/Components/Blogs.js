@@ -10,7 +10,7 @@ import bgImg from '../Assets/img/bg-removebg.png'
 
 import { useHistory } from "react-router-dom";
 
-const EWallet = () => {
+const Blogs = () => {
     const history = useHistory();
 
     const auth = getAuth();
@@ -52,7 +52,7 @@ const EWallet = () => {
         <div className="flex w-screen h-screen text-gray-400 bg-black">
         <div className={`${isSideBarOpen ? "" : "hidden"} absolute z-50 h-full lg:relative lg:z-0  bg-black lg:flex lg:flex-col w-56 border-r border-gray-800`}>
             <div className="flex items-center justify-between w-full h-16 px-4 border-b border-gray-800">
-                <img src="kryptonlogo1.png" alt="" className = "w-1/2"/>
+                <img src="/kryptonlogo1.png" alt="" className = "w-1/2"/>
                 <button onClick = {() => setIsSidebarOpen(false)} className = "lg:hidden">
                     <i class="fas fa-arrow-left"></i>
                 </button>
@@ -85,10 +85,6 @@ const EWallet = () => {
                     {user ? user.displayName : "Anonymous User"}
                     <i className="fas fa-angle-down px-2"></i>
                 </button>
-                {/* <button className="flex justify-center content-center relative ml-2 text-sm focus:outline-none group" 
-                onClick = {()=> openMenu()}>
-                    <Dropdown />
-                </button> */}
             </div>
             {/* Dropdown component */}
             <div className={`absolute right-10 flex flex-col top-12 z-50  w-30 mt-1 pb-1 bg-gray-800 border border-gray-800 shadow-lg group-focus:flex 
@@ -100,8 +96,6 @@ const EWallet = () => {
                 <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
                     <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
                     <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
-                    <div class="h-140 flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white rounded-xl" >{<News/>}</div>
-                    <div class="h-75 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Stock />}</div>
                 </div>
             </div>
         </div>
@@ -112,4 +106,4 @@ const EWallet = () => {
     )
 }
 
-export default EWallet
+export default Blogs

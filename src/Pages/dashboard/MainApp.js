@@ -8,14 +8,9 @@ import { TransactionList } from '../../Components/TransactionList';
 function MainApp() {
     return (
         <>
-        <BrowserRouter>
-        <Switch>
-        <div className = "bg-black ">
-            <Route exact="/dashboard" component={Dashboard}></Route>
-        </div>
-        <Route exact="/e-wallet" component={EWallet}></Route>
-        </Switch>
-        </BrowserRouter>
+            <div className="bg-black">
+                <Dashboard/>
+            </div>
         </>
     )
 }

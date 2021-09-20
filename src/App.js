@@ -8,9 +8,11 @@ import SignUp from './Pages/SignUp/Signup'
 import { useEffect } from 'react';
 import { getAuth, onAuthStateChanged } from '@firebase/auth';
 import { useState } from 'react/cjs/react.development';
+import EWallet  from './Components/EWallet';
+import { StockInsights } from './Components/StockInsights';
+import News from './Components/News';
+import  Blogs  from './Components/Blogs';
 
-// Import the functions you need from the SDKs you need
-// import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAV8WLaRX5zIubGVNw0H0N7jE5iJsAqJ9Q",
@@ -46,6 +48,10 @@ function App() {
           <Route exact path = "/login" component = {Login}></Route>
           <Route exact path = "/signup" component = {SignUp}></Route>
           <Route exact path = "/dashboard" component = {MainApp}></Route>
+          <Route exact path = "/dashboard/ewallet" component = {EWallet}></Route>
+          <Route exact path = "/dashboard/stockinsight" component = {StockInsights}></Route>
+          <Route exact path = "/dashboard/news" component = {News}></Route>
+          <Route exact path = "/dashboard/blogs" component = {Blogs}></Route>
         </Switch>
       </BrowserRouter>
     </>

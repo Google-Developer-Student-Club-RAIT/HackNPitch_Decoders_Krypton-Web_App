@@ -1,7 +1,6 @@
 import {getAuth, signOut } from "@firebase/auth";
 import { useEffect, useState } from "react";
 import Hamburger from '../Assets/svg/Hamburger'
-import { useHistory } from "react-router-dom";
 import { Balance } from "./Balance";
 import { TransactionList } from "./TransactionList";
 import Stock from "./Stock"
@@ -9,9 +8,11 @@ import {Link} from 'react-router-dom'
 import News from "./News";
 import bgImg from '../Assets/img/bg-removebg.png'
 
+import { useHistory } from "react-router-dom";
 
 const Dashboard = () => {
-    let history = useHistory()
+    const history = useHistory();
+
     const auth = getAuth();
     const user = auth.currentUser;
 
@@ -45,16 +46,6 @@ const Dashboard = () => {
             setIsMenuOpen(false)
         }
     }
-    // const balancestyle={
-    //     background: "black",
-    //     border: "1px solid white",
-    //     display: "flex",
-    //     justifyContent: "center",
-    //     alignItems: "center",
-    //     flexDirection: "column",
-    //     color: "white",
-
-    // }
 
     return (
         <>
@@ -67,21 +58,21 @@ const Dashboard = () => {
                 </button>
             </div>
             <div class="flex flex-col flex-grow p-4 overflow-auto">
-                <a class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
-                <Link to="/dashboard"> <span class="leading-none">Dashboard</span></Link>
-                </a>
-                <a class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
-                <Link to="/e-wallet"> <span class="leading-none">E-wallet</span></Link>
-                </a>
-                <a className="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
+                <Link class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" to="/dashboard">
+                    Dashboard
+                </Link>
+                <Link class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" to="/dashboard/ewallet">
+                    E-wallet
+                </Link>
+                <Link className="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" to="/dashboard/stockinsight">
                     <span className="leading-none">Stock Insight</span>
-                </a>
-                <a className="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
+                </Link>
+                <Link className="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" to="/dashboard/news">
                     <span className="leading-none">News</span>
-                </a>
-                <a className="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
+                </Link>
+                <Link className="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" to="/dashboard/blogs">
                     <span className="leading-none">Blogs</span>
-                </a>
+                </Link>
             </div>
         </div>
         <div className="flex flex-col flex-grow ">
