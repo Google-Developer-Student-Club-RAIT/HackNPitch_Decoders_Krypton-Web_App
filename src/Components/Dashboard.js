@@ -2,6 +2,13 @@ import {getAuth, signOut } from "@firebase/auth";
 import { useEffect, useState } from "react";
 import Hamburger from '../Assets/svg/Hamburger'
 import { useHistory } from "react-router-dom";
+import { Balance } from "./Balance";
+import { TransactionList } from "./TransactionList";
+import Stock from "./Stock"
+import {Link} from 'react-router-dom'
+import News from "./News";
+import bgImg from '../Assets/img/bg-removebg.png'
+
 
 const Dashboard = () => {
     let history = useHistory()
@@ -38,7 +45,16 @@ const Dashboard = () => {
             setIsMenuOpen(false)
         }
     }
-    
+    // const balancestyle={
+    //     background: "black",
+    //     border: "1px solid white",
+    //     display: "flex",
+    //     justifyContent: "center",
+    //     alignItems: "center",
+    //     flexDirection: "column",
+    //     color: "white",
+
+    // }
 
     return (
         <>
@@ -50,12 +66,12 @@ const Dashboard = () => {
                     <i class="fas fa-arrow-left"></i>
                 </button>
             </div>
-            <div className="flex flex-col flex-grow p-4 overflow-auto">
-                <a className="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
-                    <span className="leading-none">Dashboard</span>
+            <div class="flex flex-col flex-grow p-4 overflow-auto">
+                <a class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
+                <Link to="/dashboard"> <span class="leading-none">Dashboard</span></Link>
                 </a>
-                <a className="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
-                    <span className="leading-none">E-wallet</span>
+                <a class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
+                <Link to="/e-wallet"> <span class="leading-none">E-wallet</span></Link>
                 </a>
                 <a className="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
                     <span className="leading-none">Stock Insight</span>
@@ -88,12 +104,13 @@ const Dashboard = () => {
             ${isMenuOpen ? "" : "hidden" }`}>
                     <button onClick = {logout} className="w-full px-4 py-2 text-left hover:bg-gray-900" href="#">Logout</button>
             </div>
-            <div className="flex-grow p-6 bg-black">
-                <div className="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
-                    <div className="h-80 flex-grow lg:col-span-1 bg-white opacity-20 "></div>
-                    <div className="h-80 flex-grow lg:col-span-1 bg-white opacity-20"></div>
-                    <div className="h-80 flex-grow lg:row-span-2 bg-white opacity-20"></div>
-                    <div className="h-80 flex-grow lg:col-span-2 bg-white opacity-20"></div>
+            <div class="flex-grow p-6 bg-black">
+            <img src={bgImg} alt="" srcset="" className = "hidden lg:block lg:absolute lg:right-0 mt-10 lg:top-5 lg:opacity-30 lg:w-1/5 "/>
+                <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
+                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
+                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
+                    <div class="h-140 flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white rounded-xl" >{<News/>}</div>
+                    <div class="h-75 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Stock />}</div>
                 </div>
             </div>
         </div>
