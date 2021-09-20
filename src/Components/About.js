@@ -2,7 +2,7 @@ import bgImg from '../Assets/img/bgxl-removebg.png'
 
 export const About = () => {
     return (
-      <div className="mb-16 relative">
+      <div className="mb-16 relative" id = "about">
         <img src={bgImg} alt="" className = "hidden lg:block lg:absolute lg:opacity-30 lg:w-3/4 "/>
         <div className="bg-black">
           <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">

@@ -9,7 +9,7 @@ import bgImg from '../Assets/img/bg-removebg.png'
 
 export const Service = () => {
     return (
-      <div className = "relative">
+      <div className = "relative" id = "services">
         <img src={bgImg} alt="" srcset="" className = "hidden lg:block lg:absolute lg:right-0 lg:bottom-5 lg:opacity-30 lg:w-1/4"/>
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 relative">
           <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">

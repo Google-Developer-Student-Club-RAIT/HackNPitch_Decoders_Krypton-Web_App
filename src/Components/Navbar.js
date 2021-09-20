@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Hamburger from "../Assets/svg/Hamburger";
+import { Link } from 'react-router-dom'
+
 
 export const Nav = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,9 +21,9 @@ export const Nav = () => {
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li>
                 <a
-                  href="/"
-                  aria-label="Our product"
-                  title="Our product"
+                  href="#home"
+                  aria-label="Home"
+                  title="Home"
                   class="font-medium text-white no-underline hover:text-yellow-300 transition-colors"
                 >
                   Home
@@ -29,9 +31,9 @@ export const Nav = () => {
               </li>
               <li>
                 <a
-                  href="/"
-                  aria-label="Our product"
-                  title="Our product"
+                  href="#services"
+                  aria-label="Services"
+                  title="Services"
                   class="font-medium text-white no-underline hover:text-yellow-300 transition-colors"
                 >
                   Services
@@ -39,9 +41,9 @@ export const Nav = () => {
               </li>
               <li>
                 <a
-                  href="/"
-                  aria-label="Product pricing"
-                  title="Product pricing"
+                  href="#about"
+                  aria-label="about"
+                  title="about"
                   class="font-medium text-white no-underline hover:text-yellow-300 transition-colors"
                 >
                   About
@@ -49,9 +51,9 @@ export const Nav = () => {
               </li>
               <li>
                 <a
-                  href="/"
-                  aria-label="About us"
-                  title="About us"
+                  href="#contact"
+                  aria-label="contact"
+                  title="contact"
                   class="font-medium text-white no-underline hover:text-yellow-300 transition-colors"
                 >
                   Contact
@@ -60,24 +62,24 @@ export const Nav = () => {
             </ul>
             <ul class="flex items-center hidden space-x-8 lg:flex">
               <li>
-                <a
-                  href="/"
+                <Link
+                  to="/login"
                   class="inline-flex items-center justify-center h-12 px-3 font-medium tracking-wide text-white hover:text-yellow-300 "
                   aria-label="Sign up"
                   title="Sign up"
                 >
                   Login
-                </a>
+                </Link>
               </li>
               <li className = "z-50">
-                <a
-                  href="/"
+                <Link
+                  to="/signup"
                   class="inline-flex items-center justify-center h-9 px-3 font-medium tracking-wide bg-yellow-300 text-black hover:text-black hover:bg-white rounded-full z-50"
                   aria-label="Sign up"
                   title="Sign up"
                 >
                   Register
-                </a>
+                </Link>
               </li>
             </ul>
             <div class="lg:hidden">
@@ -125,63 +127,63 @@ export const Nav = () => {
                       <ul class="space-y-4">
                         <li>
                           <a
-                            href="/"
-                            aria-label="Our product"
-                            title="Our product"
+                            href="#home"
+                            aria-label="home"
+                            title="home"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            Product
+                            Home
                           </a>
                         </li>
                         <li>
                           <a
-                            href="/"
-                            aria-label="Our product"
-                            title="Our product"
+                            href="#services"
+                            aria-label="Our services"
+                            title="Our services"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            Features
+                            Services
                           </a>
                         </li>
                         <li>
                           <a
-                            href="/"
-                            aria-label="Product pricing"
-                            title="Product pricing"
-                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            Pricing
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            href="/"
+                            href="#about"
                             aria-label="About us"
                             title="About us"
                             class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                           >
-                            About us
+                            About Us
                           </a>
                         </li>
                         <li>
                           <a
-                            href="/"
+                            href="#contact"
+                            aria-label="contact us"
+                            title="Contact Us"
+                            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                          >
+                            Contact Us
+                          </a>
+                        </li>
+                        <li>
+                          <Link
+                            to="/login"
                             class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none border border-black "
-                            aria-label="Sign up"
-                            title="Sign up"
+                            aria-label="login"
+                            title="login"
                           >
                             Log In
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a
-                            href="/"
+                          <Link
+                            to ="/signup"
                             class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none border border-black"
                             aria-label="Sign up"
                             title="Sign up"
                           >
                             Register
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </nav>

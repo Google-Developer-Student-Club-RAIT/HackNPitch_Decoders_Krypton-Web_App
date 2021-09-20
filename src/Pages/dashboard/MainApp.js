@@ -1,6 +1,5 @@
 import React from 'react'
-import { Dashboard } from '../../Components/Dashboard';
-import { TempDashboard } from '../../Helpers/TempDashboard';
+import Dashboard  from '../../Components/Dashboard';
 
 
 function MainApp() {

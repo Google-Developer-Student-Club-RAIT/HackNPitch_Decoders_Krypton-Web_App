@@ -1,8 +1,34 @@
-import { useState } from "react";
-import Dropdown from "../Assets/svg/Dropdown";
+import {getAuth, signOut } from "@firebase/auth";
+import { useEffect, useState } from "react";
+import Hamburger from '../Assets/svg/Hamburger'
+import { useHistory } from "react-router-dom";
 
-export const Dashboard = () => {
+const Dashboard = () => {
+    let history = useHistory()
+    const auth = getAuth();
+    const user = auth.currentUser;
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isSideBarOpen, setIsSidebarOpen] = useState(false);
+
+    
+
+    const logout = () => { 
+        signOut(auth)
+            .then(() => {
+                localStorage.removeItem('token')
+                history.push('/')
+            })
+            .catch((e) => alert(e))
+    }
+
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+
+        if (!token) {
+            history.push('/')
+        }
+    }, [])
 
     const openMenu = () => {
         if (isMenuOpen === false) {
@@ -12,13 +38,17 @@ export const Dashboard = () => {
             setIsMenuOpen(false)
         }
     }
+    
+
     return (
         <>
         <div class="flex w-screen h-screen text-gray-400 bg-black">
-      
-        <div class="flex flex-col w-56 border-r border-gray-800">
+        <div class={`${isSideBarOpen ? "" : "hidden"} absolute z-50 h-full lg:relative lg:z-0  bg-black lg:flex lg:flex-col w-56 border-r border-gray-800`}>
             <div class="flex items-center justify-between w-full h-16 px-4 border-b border-gray-800">
-                <img src="kryptonlogo1.png" alt="" />
+                <img src="kryptonlogo1.png" alt="" className = "w-1/2"/>
+                <button onClick = {() => setIsSidebarOpen(false)} className = "lg:hidden">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
             </div>
             <div class="flex flex-col flex-grow p-4 overflow-auto">
                 <a class="flex items-center flex-shrink-0 h-10 px-2 text-sm font-medium rounded hover:bg-gray-800" href="#">
@@ -40,29 +70,30 @@ export const Dashboard = () => {
         </div>
         <div class="flex flex-col flex-grow ">
             <div class="flex items-center h-16 px-8 border-b border-gray-800">
-                <h1 class="text-lg font-medium">Welcome</h1>
-                <button class="flex items-center justify-center h-10 px-4 ml-auto text-sm font-medium rounded hover:bg-gray-800">
-                    User Name
+                <button onClick = {() => setIsSidebarOpen(true)} className = "lg:hidden">
+                    <Hamburger/>
                 </button>
-                <button class="relative ml-2 text-sm focus:outline-none group" 
+                <h1 class="text-lg font-medium px-4">Welcome</h1>
+                <button class="flex items-center justify-center h-10 px-4 ml-auto text-sm font-medium rounded hover:bg-gray-800" onClick = {()=> openMenu()} >
+                    {user ? user.displayName : "Anonymous User"}
+                    <i class="fas fa-angle-down px-2"></i>
+                </button>
+                {/* <button class="flex justify-center content-center relative ml-2 text-sm focus:outline-none group" 
                 onClick = {()=> openMenu()}>
                     <Dropdown />
-                </button>
+                </button> */}
             </div>
             {/* Dropdown component */}
             <div class={`absolute right-10 flex flex-col top-12 z-50  w-30 mt-1 pb-1 bg-gray-800 border border-gray-800 shadow-lg group-focus:flex 
             ${isMenuOpen ? "" : "hidden" }`}>
-                    <a class="w-full px-4 py-2 text-left hover:bg-gray-900" href="#">Menu Item 1</a>
-                    <a class="w-full px-4 py-2 text-left hover:bg-gray-900" href="#">Menu Item 2</a>
-                    <a class="w-full px-4 py-2 text-left hover:bg-gray-900" href="#">Menu Item 3</a>
+                    <button onClick = {logout} class="w-full px-4 py-2 text-left hover:bg-gray-900" href="#">Logout</button>
             </div>
             <div class="flex-grow p-6 bg-black">
-                <div class="grid grid-cols-3 grid-rows-1 grid-flow-row gap-6">
-                    <div class="h-80 flex-grow col-span-1 bg-white opacity-20 "></div>
-                    <div class="h-80 flex-grow col-span-1 bg-white opacity-20"></div>
-                    <div class="h-80 flex-grow row-span-2 bg-white opacity-20"></div>
-                    <div class="h-80 flex-grow col-span-2 bg-white opacity-20"></div>
-                    
+                <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
+                    <div class="h-80 flex-grow lg:col-span-1 bg-white opacity-20 "></div>
+                    <div class="h-80 flex-grow lg:col-span-1 bg-white opacity-20"></div>
+                    <div class="h-80 flex-grow lg:row-span-2 bg-white opacity-20"></div>
+                    <div class="h-80 flex-grow lg:col-span-2 bg-white opacity-20"></div>
                 </div>
             </div>
         </div>
@@ -73,16 +104,4 @@ export const Dashboard = () => {
     )
 }
 
-
-// .parent {
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     grid-template-rows: 1fr fr;
-//     grid-column-gap: px;
-//     grid-row-gap: 0px;
-//     }
-    
-//     .div1 { grid-area: 1 / 1 / 2 / 2; }
-//     .div2 { grid-area: 1 / 2 / 2 / 3; }
-//     .div3 { grid-area: 1 / 3 / 3 / 4; }
-//     .div4 { grid-area: 2 / 1 / 3 / 3; }
+export default Dashboard

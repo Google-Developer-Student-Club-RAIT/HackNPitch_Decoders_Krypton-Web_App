@@ -1,9 +1,10 @@
 import headerImg from '../Assets/img/Illustration.png'
 import bgImg from '../Assets/img/bgxl-removebg.png'
+import { Link } from 'react-router-dom';
 
 export const Content = () => {
     return (
-    <div className="img-comp">
+    <div className="img-comp" id = "home">
       <img src={bgImg} alt="" className = "hidden lg:block lg:absolute lg:opacity-30 lg:w-3/4 "/>
       <div className="relative flex flex-col-reverse px-10 py-16 lg:py-0 lg:flex-col ">
         <div className="w-full max-w-xl px-4 mx-auto md:px-0 lg:px-10 lg:py-20 lg:max-w-screen-xl">
@@ -20,12 +21,12 @@ export const Content = () => {
               quae. explicabo.
             </p>
             <div className="mb-10  md:mb-16 lg:mb-20">
-              <a
-                href="/"
+              <Link
+                to ="/login"
                 className="inline-flex items-center justify-center w-full h-10 px-6 mt-4 font-medium tracking-wide bg-white transition duration-200 rounded-full shadow-md md:w-auto focus:shadow-outline focus:outline-none hover:bg-yellow-300"
               >
                 Get Started
-              </a>
+              </Link>
             </div>
           </div>
         </div>
