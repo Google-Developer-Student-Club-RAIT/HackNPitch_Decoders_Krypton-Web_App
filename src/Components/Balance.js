@@ -6,14 +6,11 @@ export const Balance = () => {
     const amounts = transactions.map(transaction => transaction.amount);
     console.log(amounts);
     const total = amounts.reduce((acc, item) => (acc+=item), 0).toFixed(2);
-    const titlestyle = {
-        fontSize: "2rem",
-    }
     return (
         <>
-            <h4 style={titlestyle}>Your Balance</h4>
-            <h1 id="balance">${total}</h1>
-            <button>Update Balance</button>
+            <h4 className="my-4 mx-4 text-4xl">Your Balance</h4>
+            <h1 id="balance" className="text-2xl my-24 mx-32" >₹{total}</h1>
+            <button className="text-lg float-right mr-4 hover:text-yellow-300">Update Balance</button>
 
         </>
     )

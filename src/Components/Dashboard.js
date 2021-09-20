@@ -6,6 +6,8 @@ import { Balance } from "./Balance";
 import { TransactionList } from "./TransactionList";
 import Stock from "./Stock"
 import {Link} from 'react-router-dom'
+import News from "./News";
+import bgImg from '../Assets/img/bg-removebg.png'
 
 
 const Dashboard = () => {
@@ -43,16 +45,16 @@ const Dashboard = () => {
             setIsMenuOpen(false)
         }
     }
-    const balancestyle={
-        background: "black",
-        border: "1px solid white",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-        color: "white",
+    // const balancestyle={
+    //     background: "black",
+    //     border: "1px solid white",
+    //     display: "flex",
+    //     justifyContent: "center",
+    //     alignItems: "center",
+    //     flexDirection: "column",
+    //     color: "white",
 
-    }
+    // }
 
     return (
         <>
@@ -103,11 +105,12 @@ const Dashboard = () => {
                     <button onClick = {logout} class="w-full px-4 py-2 text-left hover:bg-gray-900" href="#">Logout</button>
             </div>
             <div class="flex-grow p-6 bg-black">
+            <img src={bgImg} alt="" srcset="" className = "hidden lg:block lg:absolute lg:right-0 mt-10 lg:top-5 lg:opacity-30 lg:w-1/5 "/>
                 <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
-                    <div class="h-80 flex-grow lg:col-span-1" style={balancestyle}>{<Balance />}</div>
-                    <div class="h-80 flex-grow lg:col-span-1 bg-black" style={balancestyle}>{<TransactionList/>}</div>
-                    <div class="h-140 flex-grow lg:row-span-2 bg-black" style={balancestyle}></div>
-                    <div class="h-75 flex-grow lg:col-span-2">{<Stock />}</div>
+                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
+                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
+                    <div class="h-140 flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white rounded-xl" >{<News/>}</div>
+                    <div class="h-75 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Stock />}</div>
                 </div>
             </div>
         </div>

@@ -45,7 +45,7 @@ class Stock extends React.Component {
         for (var key in data["Time Series (5min)"]) {
           stockChartXValuesfunction.push(key);
           stockChartYValuesfunction.push(
-            data["Time Series (5min)"][key]["1. open"]
+            data["Time Series (5min)"][key]["2. high"]
           );
         }
 
