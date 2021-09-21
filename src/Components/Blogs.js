@@ -93,10 +93,7 @@ const Blogs = () => {
             </div>
             <div class="flex-grow p-6 bg-black">
             <img src={bgImg} alt="" srcset="" className = "hidden lg:block lg:absolute lg:right-0 mt-10 lg:top-5 lg:opacity-30 lg:w-1/5 "/>
-                <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
-                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
-                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
-                </div>
+                
             </div>
         </div>
 
