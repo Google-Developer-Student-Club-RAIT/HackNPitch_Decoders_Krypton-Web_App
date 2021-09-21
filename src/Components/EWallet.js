@@ -52,7 +52,7 @@ const EWallet = () => {
         <div className="flex w-screen h-screen text-gray-400 bg-black">
         <div className={`${isSideBarOpen ? "" : "hidden"} absolute z-50 h-full lg:relative lg:z-0  bg-black lg:flex lg:flex-col w-56 border-r border-gray-800`}>
             <div className="flex items-center justify-between w-full h-16 px-4 border-b border-gray-800">
-                <img src="kryptonlogo1.png" alt="" className = "w-1/2"/>
+                <img src="/kryptonlogo1.png" alt="" className = "w-1/2"/>
                 <button onClick = {() => setIsSidebarOpen(false)} className = "lg:hidden">
                     <i class="fas fa-arrow-left"></i>
                 </button>
@@ -97,12 +97,14 @@ const EWallet = () => {
             </div>
             <div class="flex-grow p-6 bg-black">
             <img src={bgImg} alt="" srcset="" className = "hidden lg:block lg:absolute lg:right-0 mt-10 lg:top-5 lg:opacity-30 lg:w-1/5 "/>
-                <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
-                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
-                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
-                    <div class="h-140 flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white rounded-xl" >{<News/>}</div>
-                    <div class="h-75 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Stock />}</div>
-                </div>
+            {/* <div class="grid lg:grid-cols-2 lg:grid-rows-1 grid-flow-row gap-6">
+                    <div class="h-100  lg:row-span-6 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
+                    <div class="h-100  lg:row-span-6 bg-white bg-opacity-10 text-white rounded-xl" >{<Balance/>}</div>
+                </div> */}
+                <div class="flex flex-wrap -mx-2 overflow-hidden">
+                    <div class="my-1 px-1 h-full w-full overflow-hidden sm:w-full md:w-full lg:h-full xl:h-full xl:h-full bg-white bg-opacity-10 text-white rounded-xl">{<Balance/>}</div>
+                    <div class="my-1 px-1 h-full w-full overflow-hidden sm:w-full md:w-full lg:h-full xl:h-full xl:h-full bg-white bg-opacity-10 text-white rounded-xl">{<Balance/>}</div>
+                    </div>
             </div>
         </div>
 
