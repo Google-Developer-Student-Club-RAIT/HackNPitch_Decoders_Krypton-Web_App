@@ -12,7 +12,7 @@ import EWallet  from './Components/EWallet';
 import { StockInsights } from './Components/StockInsights';
 import News from './Components/News';
 import  Blogs  from './Components/Blogs';
-
+import { GlobalProvider } from './Hooks/GlobalState';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAV8WLaRX5zIubGVNw0H0N7jE5iJsAqJ9Q",
@@ -42,6 +42,7 @@ function App() {
 
   return (
     <>
+    <GlobalProvider>
       <BrowserRouter>
         <Switch>
           <Route exact path = "/" component = {Main}></Route>
@@ -54,6 +55,7 @@ function App() {
           <Route exact path = "/dashboard/blogs" component = {Blogs}></Route>
         </Switch>
       </BrowserRouter>
+    </GlobalProvider>
     </>
   );
 }

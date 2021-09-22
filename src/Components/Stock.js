@@ -7,7 +7,6 @@ import React from "react";
 import {
   LineChart,
   ResponsiveContainer,
-  Legend,
   Tooltip,
   Line,
   XAxis,
@@ -20,7 +19,8 @@ class Stock extends React.Component {
     super(props);
     this.state = {
       stockChartXValues: [],
-      stockChartYValues: []
+      stockChartYValues: [],
+      text: ''
     };
   }
 
@@ -107,6 +107,7 @@ class Stock extends React.Component {
         backgroundColor: "black",
         width: "100%",
     }
+
     return (
       <div style={divstyle}>
         {/* <h1>Stock Market</h1> */}
@@ -129,8 +130,20 @@ class Stock extends React.Component {
             </LineChart>
           }
         </ResponsiveContainer>
-        
+        {/* <div class="p-8">
+  <div class="bg-white flex items-center rounded-full shadow-xl">
+    <input class="rounded-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search Stock"/>
+    <div class="p-4">
+      <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
+        icon
+      </button>
       </div>
+          </div>
+          </div> */}
+          
+      </div>
+      
+          
     );
   }
 }
