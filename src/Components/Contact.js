@@ -23,7 +23,7 @@ export const Contact = () => {
                   <h3 className="mb-4 text-xl text-white font-semibold sm:text-center sm:mb-6 sm:text-2xl ">
                     Contact Us 
                   </h3>
-                  <form>
+                  <form action = "https://script.google.com/macros/s/AKfycbzcR_zU8myUAOx6lXWpjrlrdb-Ns-8tMod1SG_z0QR4wlg49Y7J1biR3AttBGPz_MIz/exec" class="gform pure-form pure-form-stacked" method="POST" data-email="coutkunal@gmail.com">
                     <div className="mb-1 sm:mb-2">
                       <label
                         htmlFor="name"
@@ -31,14 +31,7 @@ export const Contact = () => {
                       >
                         Name
                       </label>
-                      <input
-                        placeholder="Name"
-                        required
-                        type="text"
-                        className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-gray-200 border border-gray-300 rounded shadow-sm appearance-none focus:outline-none focus:shadow-outline"
-                        id="name"
-                        name="name"
-                      />
+                      <input id="name" name="name" placeholder="name" className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-gray-200 border border-gray-300 rounded shadow-sm appearance-none focus:outline-none focus:shadow-outline" type="text" required/>
                     </div>
                     <div className="mb-1 sm:mb-2">
                       <label
@@ -69,7 +62,7 @@ export const Contact = () => {
                         type="text"
                         className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-gray-200 border border-gray-300 rounded shadow-sm appearance-none focus:outline-none focus:shadow-outline"
                         id="name"
-                        name=""
+                        name="message"
                       />
                     </div>
                     <div className="mt-4 mb-2 sm:mb-4">
@@ -79,6 +72,10 @@ export const Contact = () => {
                       >
                         Send
                       </button>
+                    </div>
+                    <div class="thankyou_message hidden">
+                      <h2><em>Thanks</em> for contacting us!
+                        We will get back to you soon!</h2>
                     </div>
                   </form>
                 </div>

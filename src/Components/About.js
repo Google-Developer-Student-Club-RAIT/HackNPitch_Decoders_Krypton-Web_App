@@ -53,19 +53,25 @@ export const About = () => {
         <div className="relative px-4 sm:px-0">
           <div className="relative grid mx-auto overflow-hidden  divide-y rounded  sm:divide-x sm:max-w-screen-sm bg-white bg-opacity-10 ">
             <h2 className="flex items-center justify-center md:text-lg mt-2 text-center z-40 text-white py-4" >GET WEEKLY INSIGHTS AND FACTS RIGHT IN YOUR INBOX</h2>
-      <form className="flex flex-col items-center w-full mb-4 mt- md:flex-row md:px-10 border-opacity-0 pb-4">
+      <form className="gform pure-form pure-form-stacked flex flex-col items-center w-full mb-4 mt- md:flex-row md:px-10 border-opacity-0 pb-4" action = "https://script.google.com/macros/s/AKfycbxr5o2KSj72H9YEBrI2EcmR7ylzqXOTe9sMuORvZidB012q_F8hEGMDlYsSVoJqhaGu1g/exec"  method="POST" data-email="coutkunal@gmail.com">
         <input
           placeholder="Email"
           required=""
           type="text"
+          id="email"
+          name="email"
           className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-gray-200 border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0  focus:outline-none focus:shadow-outline "
         />
         <button
           type="submit"
-          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black bg-gray-200 transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black bg-gray-200 transition duration-200 rounded shadow-md md:w-auto "
         >
           Subscribe
         </button>
+        <div class="thankyou_message hidden">
+          <h2><em>Thanks</em> for contacting us!
+            We will get back to you soon!</h2>
+        </div>
       </form>
           </div>
         </div>
