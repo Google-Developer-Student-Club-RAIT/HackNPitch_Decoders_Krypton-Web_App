@@ -21,7 +21,7 @@ export const AddTransaction = () => {
 
     return (
         <div>
-            <h3 className="my-6 mx-4 text-4xl">Add new transaction</h3>
+            <h3 className="my-6 mx-4 text-3xl">Add new transaction</h3>
       <form id="form">
         <div className="form-control">
           {/* <label htmlFor="text">Text</label> */}
