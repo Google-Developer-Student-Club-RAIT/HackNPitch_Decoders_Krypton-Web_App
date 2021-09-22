@@ -7,7 +7,8 @@ import Stock from "./Stock"
 import {Link} from 'react-router-dom'
 import News from "./News";
 import bgImg from '../Assets/img/bg-removebg.png'
-
+import { Expense } from "./Expense";
+import { AddTransaction } from "./AddTransaction";
 import { useHistory } from "react-router-dom";
 
 const EWallet = () => {
@@ -101,10 +102,16 @@ const EWallet = () => {
                     <div class="h-100  lg:row-span-6 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
                     <div class="h-100  lg:row-span-6 bg-white bg-opacity-10 text-white rounded-xl" >{<Balance/>}</div>
                 </div> */}
-                <div class="flex flex-wrap -mx-2 overflow-hidden">
-                    <div class="my-1 px-1 h-full w-full overflow-hidden sm:w-full md:w-full lg:h-full xl:h-full xl:h-full bg-white bg-opacity-10 text-white rounded-xl">{<Balance/>}</div>
-                    <div class="my-1 px-1 h-full w-full overflow-hidden sm:w-full md:w-full lg:h-full xl:h-full xl:h-full bg-white bg-opacity-10 text-white rounded-xl">{<Balance/>}</div>
-                    </div>
+                {/* <div class="flex flex-wrap -mx-2 overflow-hidden">
+                    <div class="my-1 px-1 h-full w-full overflow-hidden sm:w-full md:w-full lg:h-full xl:h-full xl:h-full bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
+                    <div class="my-1 px-1 h-full w-full overflow-hidden sm:w-full md:w-full lg:h-full xl:h-full xl:h-full bg-white bg-opacity-10 text-white rounded-xl">{<Expense />}</div>
+                </div> */}
+                <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
+                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
+                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<AddTransaction />}</div>
+                    <div class="h-140 flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
+                    <div class="h-75 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Expense />}</div>
+                </div>
             </div>
         </div>
 
