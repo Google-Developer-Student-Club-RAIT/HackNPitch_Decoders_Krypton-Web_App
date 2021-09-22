@@ -102,7 +102,7 @@ export const StockInsights = () => {
           <div class="flex-grow p-6 bg-black">
           <img src={bgImg} alt="" srcset="" className = "hidden lg:block lg:absolute lg:right-0 mt-10 lg:top-5 lg:opacity-30 lg:w-1/5 "/>
           <div class="h-100 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Stock/>}</div>
-          <div class="p-8">
+          {/* <div class="p-8">
   <div class="bg-white flex items-center rounded-full shadow-xl">
     <input class="rounded-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search Stock"/>
     <div class="p-4">
@@ -111,7 +111,7 @@ export const StockInsights = () => {
       </button>
       </div>
           </div>
-          </div>
+          </div> */}
           </div>
       </div>
 
