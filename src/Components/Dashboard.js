@@ -100,7 +100,23 @@ const Dashboard = () => {
                 <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
                     <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
                     <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
-                    <div class="h-140 flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white rounded-xl">News</div>
+                    <div class="h-140 flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white text-4xl pl-4 pt-4 rounded-xl">HEADLINES
+                    <h1 className=" mt-5  text-yellow-300 text-xl"><a href="https://finance.yahoo.com/">YAHOO! FINANCE</a></h1>
+                    <p className=" hover:text-yellow-300 text-xl"><a href="https://finance.yahoo.com/m/0bfe0a68-44fd-3d51-8fac-f16fd3debe05/when-the-stock-market-pulls.html">
+                        When the stock market pulls back</a></p>
+                        <h1 className=" mt-5 text-yellow-300 text-xl"><a href="https://www.cnbc.com/world/?region=world">CNBC.COM</a></h1>
+                    <p className=" hover:text-yellow-300 text-xl"><a href="https://www.cnbc.com/2021/09/22/gold-markets-federal-reserve.html">
+                        Gold inches higher ahead of Fed policy decision</a></p>
+                    <h1 className=" mt-5 text-yellow-300 text-xl"><a href="https://www.livemint.com/">MINT</a></h1>
+                    <p className=" hover:text-yellow-300 text-xl"><a href="https://www.livemint.com/market/ipo/india-likely-to-block-chinese-investment-in-insurance-giant-lic-s-ipo-report-11632303723350.html">
+                        India likely to block Chinese investment in LIC's mega IPO</a></p>
+                        <h1 className="mt-5 text-yellow-300 text-xl"><a href="https://www.livemint.com/">BLOOMBERG | QUINT</a></h1>
+                    <p className="hover:text-yellow-300 text-xl"><a href="https://www.bloombergquint.com/business/india-taps-amazon-microsoft-for-farm-tech-as-modi-eyes-reforms">
+                    Amazon, Microsoft Swoop In on $24 Billion India Farm-Data Trove</a></p>
+                    <h1 className=" mt-5 text-yellow-300 text-xl"><a href="https://www.marketwatch.com/">MARKETWATCH.COM</a></h1>
+                    <p className=" hover:text-yellow-300 text-xl"><a href="https://www.marketwatch.com/story/facebook-overpaid-ftc-fine-as-quid-pro-quo-to-protect-zuckerberg-from-liability-shareholders-claim-11632278039?mod=home-page">
+                        Facebook overpaid FTC fine as ‘quid pro quo’ to protect Zuckerberg from liability, shareholders claim</a></p>
+                    </div>
                     <div class="h-75 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Stock />}</div>
                 </div>
             </div>

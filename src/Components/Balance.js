@@ -10,8 +10,6 @@ export const Balance = () => {
         <>
             <h4 className="my-4 mx-4 text-4xl">Your Balance</h4>
             <h1 id="balance" className="text-2xl my-24 mx-32" >₹{total}</h1>
-            <button className="text-lg float-right mr-4 hover:text-yellow-300">Update Balance</button>
-
         </>
     )
 }
