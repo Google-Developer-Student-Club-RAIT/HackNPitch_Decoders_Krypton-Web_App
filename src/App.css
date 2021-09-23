@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  font-size: 30px;
 }
 
 .inc-exp-container > div {
@@ -16,7 +17,7 @@
 }
 
 .money {
-  font-size: 20px;
+  font-size: 30px;
   letter-spacing: 1px;
   margin: 5px 0;
 }
@@ -26,7 +27,8 @@
 }
 
 .money.minus {
-  color: #c0392b;
+  /* color: #c0392b; */
+  color: #ff0000;
 }
 
 label {
@@ -87,7 +89,7 @@ input[type="number"]:focus {
 }
 
 .list li.minus {
-  border-right: 5px solid #c0392b;
+  border-right: 5px solid #ff0000;
 }
 
 .delete-btn {
@@ -98,10 +100,10 @@ input[type="number"]:focus {
   font-size: 20px;
   line-height: 20px;
   padding: 2px 5px;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 0;
-  transform: translate(-100%, -50%);
+  transform: translate(-60%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
