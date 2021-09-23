@@ -18,7 +18,7 @@ function NewsApi() {
         <>  
             {(articles.articles !== undefined) ? articles.articles.map((elem) => {
                 return(
-                    <div className = "bg-transparent w-full ">
+                    <div className = "bg-transparent  ">
                         <h1 className=" mt-5  text-yellow-300 text-xl">
                             <a href={elem.url} target = "_blank">{elem.source.name}</a>
                         </h1>

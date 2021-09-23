@@ -73,8 +73,8 @@ export const Contact = () => {
                         Send
                       </button>
                     </div>
-                    <div class="thankyou_message hidden">
-                      <h2><em>Thanks</em> for contacting us!
+                    <div className="thankyou_message hidden">
+                      <h2 className = "text-white font-bold"><em>Thanks</em> for contacting us!
                         We will get back to you soon!</h2>
                     </div>
                   </form>

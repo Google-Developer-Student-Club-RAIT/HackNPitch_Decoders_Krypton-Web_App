@@ -69,7 +69,7 @@ export const About = () => {
           Subscribe
         </button>
         <div class="thankyou_message hidden">
-          <h2><em>Thanks</em> for contacting us!
+          <h2 className = "text-white font-bold"><em>Thanks</em> for contacting us!
             We will get back to you soon!</h2>
         </div>
       </form>
