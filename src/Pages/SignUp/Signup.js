@@ -14,7 +14,7 @@ function Signup({history}) {
     const [password, setPassword] = useState("")
     const [loading, setLoading] = useState(false);
 
-
+  
     const db = getFirestore();
     useEffect(() => {
       const token = localStorage.getItem('token')
