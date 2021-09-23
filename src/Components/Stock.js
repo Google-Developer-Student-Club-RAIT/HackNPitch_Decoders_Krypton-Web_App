@@ -16,25 +16,19 @@ class Stock extends React.Component {
       stockChartXValues: [],
       stockChartYValues: [],
       text: 'MSFT',
-      setSearchBar: props.searchBar? "":"hidden"     //class for hidding search bar 
+      setSearchBar: props.searchBar ? "" : "hidden"     //class for hidding search bar 
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     console.log("searchBar-", props.searchBar)
   }
 
-  // handlSearchBar(props) {
-  //   this.setState({ setSearchBar: props.searchBar?"sbar":"hidden" }); //on props update check if need searchbar or not
-  //  
-  // }
-
   handleChange(event) {
     this.setState({ text: event.target.value });
   }
   handleSubmit(event) {
-    // alert(' name : ' + this.state.text);
-    this.fetchStock();
     event.preventDefault();
+    this.fetchStock();
   }
 
 
