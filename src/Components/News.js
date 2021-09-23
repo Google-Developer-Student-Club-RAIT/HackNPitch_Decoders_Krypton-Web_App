@@ -24,7 +24,7 @@ const News = () => {
 
     useEffect(()=> {
         const getArticles = async() => {
-            const res = await fetch('https://newsapi.org/v2/top-headlines?apiKey=479afad057c54301a9754795b8271da0&q=stock')
+            const res = await fetch('https://saurav.tech/NewsAPI/top-headlines/category/business/in.json')
 
             const data = await res.json();
             return data

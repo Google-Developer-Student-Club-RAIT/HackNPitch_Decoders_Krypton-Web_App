@@ -75,7 +75,7 @@ const Blogs = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="flex flex-col flex-grow ">
+                <div className="flex  w-full flex-col flex-grow ">
                     <div className="flex items-center h-16 px-8 border-b border-gray-800">
                         <button onClick={() => setIsSidebarOpen(true)} className="lg:hidden">
                             <Hamburger />
@@ -118,40 +118,40 @@ const Blogs = () => {
                                 </form>
                             </div>
                             <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl overflow-y-auto">
-                                <h1 className=" mt-2  text-yellow-300 text-2xl">How to read stock charts</h1>
+                                <h1 className=" mt-2 ml-4 text-yellow-300 text-2xl">How to read stock charts</h1>
                                 <p className="my-4 mx-4 leading-6">In this segment, we will review some basic stock chart patterns that are used for
                                     stock chart analysis and drawing important conclusions. Chart patterns are divided into reversal patterns and continuation
                                     patterns. Note that these patterns can be used for all types of charts, except for point and figure charts.</p>
-                                <h3 className=" text-lg text-white hover:text-yellow-300"><a href="https://www.kotaksecurities.com/ksweb/share-market/how-to-read-stock-charts">Read Here..</a></h3>
+                                <h3 className="ml-4 text-lg text-white hover:text-yellow-300"><a href="https://www.kotaksecurities.com/ksweb/share-market/how-to-read-stock-charts">Read Here..</a></h3>
                             </div>
                             <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl overflow-y-auto" >
-                                <h1 className=" mt-2  text-yellow-300 text-2xl">Approaches to select stock</h1>
+                                <h1 className=" mt-2 ml-4 text-yellow-300 text-2xl">Approaches to select stock</h1>
                                 <p className="my-4 mx-4 leading-6">Fundamental analysis has different sub-approaches to stock picking. All these sub-approaches focus
                                     on the underlying business of the companies. However, they differ in the methods of selecting stocks for detailed analysis and the
                                     features of stocks, which are focused on future gains.</p>
-                                <h3 className=" text-lg text-white hover:text-yellow-300"><a href="https://www.kotaksecurities.com/ksweb/Meaningful-Minutes/Two-approaches-to-select-stocks">Read Here..</a></h3>
+                                <h3 className="ml-4 text-lg text-white hover:text-yellow-300"><a href="https://www.kotaksecurities.com/ksweb/Meaningful-Minutes/Two-approaches-to-select-stocks">Read Here..</a></h3>
                             </div>
                             <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl overflow-y-auto" >
-                                <h1 className=" mt-2  text-yellow-300 text-2xl">Points to keep in mind while reading stock recommendations</h1>
+                                <h1 className="ml-4 mt-2  text-yellow-300 text-2xl">Points to keep in mind while reading stock recommendations</h1>
                                 <p className="my-4 mx-4 leading-6">Every investor comes across stock recommendations at some point in time or the other.
                                     This may be through your brokerage firm, business channels and websites, or even pink papers.However,
                                     it may not always be easy to follow these recommendations.</p>
-                                <h3 className=" text-lg text-white hover:text-yellow-300"><a href="https://www.kotaksecurities.com/ksweb/Meaningful-Minutes/6-points-to-keep-in-mind-while-reading-stock-recommendations?utm_source=fa_knowledgebank&utm_medium=fa_knowledgebank_ReadStockCharts&utm_campaign=Knowledgebank&utm_content=%20Knowledgebank&utm_term=Knowledgebank">Read Here..</a></h3>
+                                <h3 className="ml-4 text-lg text-white hover:text-yellow-300"><a href="https://www.kotaksecurities.com/ksweb/Meaningful-Minutes/6-points-to-keep-in-mind-while-reading-stock-recommendations?utm_source=fa_knowledgebank&utm_medium=fa_knowledgebank_ReadStockCharts&utm_campaign=Knowledgebank&utm_content=%20Knowledgebank&utm_term=Knowledgebank">Read Here..</a></h3>
                             </div>
                             <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl overflow-y-auto">
-                                <h1 className=" mt-2  text-yellow-300 text-2xl">Is Day Trading a Good Idea?</h1>
+                                <h1 className=" mt-2 ml-4 text-yellow-300 text-2xl">Is Day Trading a Good Idea?</h1>
                                 <p className="my-4 mx-4 leading-6">Day traders typically target stocks, options, futures, commodities or currencies, holding positions for hours or minutes before selling again.
                                     Day traders enter and exit positions within the day, hence the term day traders.They rarely hold positions overnight. The goal is to profit from short-term price movements. </p>
-                                <h3 className=" text-lg text-white hover:text-yellow-300"><a href="https://www.investopedia.com/articles/active-trading/053115/average-rate-return-day-traders.asp">Read Here..</a></h3>
+                                <h3 className="ml-4 text-lg text-white hover:text-yellow-300"><a href="https://www.investopedia.com/articles/active-trading/053115/average-rate-return-day-traders.asp">Read Here..</a></h3>
                             </div>
                             <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl overflow-y-auto">
-                                <h1 className=" mt-2  text-yellow-300 text-2xl">Why Financial Management is important?</h1>
+                                <h1 className=" mt-2 ml-4 text-yellow-300 text-2xl">Why Financial Management is important?</h1>
                                 <p className="my-4 mx-4 leading-6">Helps organisations in financial planning;
                                     Assists organisations in the planning and acquisition of funds;
                                     Helps organisations in effectively utilising and allocating the funds received or acquired;
                                     Assists organisations in making critical financial decisions;
                                     Helps in improving the profitability of organisations.</p>
-                                <h3 className=" text-lg text-white hover:text-yellow-300"><a href="https://www.lsbf.org.uk/blog/news/importance-of-financial-management/117410">Read Here..</a></h3>
+                                <h3 className="ml-4 text-lg text-white hover:text-yellow-300"><a href="https://www.lsbf.org.uk/blog/news/importance-of-financial-management/117410">Read Here..</a></h3>
                             </div>
                         </div>
                     </div>
