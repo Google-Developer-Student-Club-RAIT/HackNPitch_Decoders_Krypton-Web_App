@@ -3,16 +3,20 @@ import { initializeApp } from "firebase/app";
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import Main from './Pages/main/Main'
 import MainApp  from './Pages/dashboard/MainApp';
-import Login from './Pages/login/Login'
-import SignUp from './Pages/SignUp/Signup'
 import { useEffect } from 'react';
-import { getAuth, onAuthStateChanged } from '@firebase/auth';
 import { useState } from 'react/cjs/react.development';
 import EWallet  from './Components/EWallet';
 import { StockInsights } from './Components/StockInsights';
 import News from './Components/News';
 import  Blogs  from './Components/Blogs';
 import { GlobalProvider } from './Hooks/GlobalState';
+
+
+// firebase
+import Login from './Pages/login/Login'
+import SignUp from './Pages/SignUp/Signup'
+import { getAuth, onAuthStateChanged } from '@firebase/auth';
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyAV8WLaRX5zIubGVNw0H0N7jE5iJsAqJ9Q",

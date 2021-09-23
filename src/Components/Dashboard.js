@@ -10,12 +10,16 @@ import bgImg from '../Assets/img/bg-removebg.png'
 
 import NewsApi from '../Components/NewsApi'
 
+import { getFirestore } from "firebase/firestore"
+import { collection, onSnapshot } from "@firebase/firestore";
+
 import { useHistory } from "react-router-dom";
 
 const Dashboard = () => {
     const history = useHistory();
 
     const auth = getAuth();
+    const db = getFirestore();
     const user = auth.currentUser;
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,13 +35,22 @@ const Dashboard = () => {
             })
             .catch((e) => alert(e))
     }
-
+    // auth edgecases
     useEffect(() => {
         const token = localStorage.getItem('token');
 
         if (!token) {
             history.push('/')
         }
+    }, [])
+
+    // firestore
+    useEffect(() => {
+        onSnapshot(collection(db,"users"),(snapshot) => {
+            console.log(snapshot.docs.map(doc => {
+                doc.data();
+            }))
+        });
     }, [])
 
     const openMenu = () => {

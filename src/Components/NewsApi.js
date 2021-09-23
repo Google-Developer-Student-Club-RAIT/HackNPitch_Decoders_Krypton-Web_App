@@ -13,7 +13,6 @@ function NewsApi() {
         getArticles().then(data => setArticles(data))
         .catch(err => console.log(err));
     },[])
-    console.log(articles.articles)
     return (
         <>  
             {(articles.articles !== undefined) ? articles.articles.map((elem) => {

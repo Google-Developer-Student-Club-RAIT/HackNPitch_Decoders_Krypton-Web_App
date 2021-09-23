@@ -54,7 +54,7 @@ function Login({history}) {
                         <div className="mt-4">
                           <label className="block text-base font-medium leading-relaxed text-white">Password</label>
                           <input value = {password} onChange = {e => setPassword(e.target.value)} type="password" name="password" id="" placeholder="Your Password " className="w-full px-4 py-2 mt-2 text-base transition duration-500 ease-in-out transform border-transparent rounded-lg bg-blueGray-100 focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 ext-black focus:border-blueGray-500" autocomplete="" required="" />
-                        </div>
+                        </div> 
 
                         <button onClick = {onLogin}  className="block w-full px-4 py-3 mt-6 font-semibold text-white hover:text-yellow-300 transition duration-500 ease-in-out transform rounded-lg bg-gradient-to-r from-black hover:from-black to-black focus:outline-none focus:shadow-outline focus:ring-2 ring-offset-current ring-offset-2 hover:to-black">
                             {loading ? 'Logging You In' : "Log In"}
