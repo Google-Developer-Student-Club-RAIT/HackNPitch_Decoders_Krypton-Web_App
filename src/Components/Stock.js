@@ -70,7 +70,7 @@ class Stock extends React.Component {
         textColor: "white",
     }
     return (
-      <div className="max-w-full justify-items-stretch m-8">
+      <div className="max-w-full justify-items-stretch m-3">
         <h1 className="ml-16 mb-4 text-lg">{this.state.text}</h1>
         <ResponsiveContainer minWidth="80%" aspect={3} minHeight="80%">
           {
