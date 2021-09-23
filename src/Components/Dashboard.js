@@ -48,7 +48,12 @@ const Dashboard = () => {
             setIsMenuOpen(false)
         }
     }
-
+    const headlinestyle={
+        height: "85vh"
+    }
+    const transactionStyle={
+        height: "44.5vh"
+    }
     return (
         <>
         <div className="flex w-screen h-screen text-gray-400 bg-black">
@@ -97,12 +102,12 @@ const Dashboard = () => {
             <img src={bgImg} alt="" srcset="" className = "hidden lg:block lg:absolute lg:right-0 mt-10 lg:top-5 lg:opacity-30 lg:w-1/5 "/>
                 <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
                     <div class="h-80 w-80 lg:w-auto flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
-                    <div class="h-80 w-80 lg:w-auto flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
-                    <div class="h-140 w-80 h-80 lg:w-auto flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white text-4xl pl-4 pt-4 rounded-xl overflow-y-scroll">
+                    <div class=" overflow-y-scroll w-80 lg:w-auto flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" style={transactionStyle}>{<TransactionList/>}</div>
+                    <div class="w-80 lg:w-auto flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white text-4xl pl-4 pt-4 rounded-xl overflow-y-scroll" style={headlinestyle}>
                         HEADLINES
                         <NewsApi/>
                     </div>
-                    <div class="lg:w-full lg:max-h-80 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Stock />}</div>
+                    <div class="w-4/5 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Stock />}</div>
                 </div>
             </div>
         </div>

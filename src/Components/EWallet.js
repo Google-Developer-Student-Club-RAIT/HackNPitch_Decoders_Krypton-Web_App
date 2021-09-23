@@ -47,7 +47,9 @@ const EWallet = () => {
             setIsMenuOpen(false)
         }
     }
-
+    const listStyle={
+        height: "75vh"
+    }
     return (
         <>
         <div className="flex w-screen h-screen text-gray-400 bg-black">
@@ -109,7 +111,7 @@ const EWallet = () => {
                 <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
                     <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
                     <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<AddTransaction />}</div>
-                    <div class="mt-16 h-140 flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
+                    <div class="overflow-y-scroll flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white rounded-xl" style={listStyle}>{<TransactionList/>}</div>
                     <div class="h-75 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Expense />}</div>
                 </div>
             </div>
