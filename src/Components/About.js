@@ -64,7 +64,7 @@ export const About = () => {
         />
         <button
           type="submit"
-          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black bg-gray-200 transition duration-200 rounded shadow-md md:w-auto "
+          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black bg-gray-200 hover:bg-yellow-300 transition duration-200 rounded shadow-md md:w-auto "
         >
           Subscribe
         </button>

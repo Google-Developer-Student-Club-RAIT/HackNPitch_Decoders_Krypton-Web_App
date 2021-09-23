@@ -15,7 +15,7 @@ class Stock extends React.Component {
     this.state = {
       stockChartXValues: [],
       stockChartYValues: [],
-      text: ''
+      text: 'MSFT'
     };
   }
 
@@ -64,16 +64,14 @@ class Stock extends React.Component {
       data.push(d);
     }
     
-    const divstyle={
-        backgroundColor: "black",
-        width: "100%",
-    }
+  
     const labelStyle={
         backgroundColor: "black",
         textColor: "white",
     }
     return (
-      <div style={divstyle}>
+      <div className="max-w-full justify-items-stretch m-8">
+        <h1 className="ml-16 mb-4 text-lg">{this.state.text}</h1>
         <ResponsiveContainer minWidth="80%" aspect={3} minHeight="80%">
           {
             <LineChart data={data} margin={{ top: 0, left: 0 }}>
