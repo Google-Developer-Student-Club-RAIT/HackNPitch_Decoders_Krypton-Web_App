@@ -1,9 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
-import {getAuth, createUserWithEmailAndPassword, updateProfile} from 'firebase/auth';
 import logo from '../../Assets/img/kryptonlogo-removebg.png'
 import bgImg from '../../Assets/img/bgxl-removebg.png'
 
+import {getAuth, createUserWithEmailAndPassword, updateProfile} from 'firebase/auth';
+import { getFirestore } from "@firebase/firestore"
+import { collection, onSnapshot } from "@firebase/firestore";
 
 function Signup({history}) {
 
@@ -12,6 +14,8 @@ function Signup({history}) {
     const [password, setPassword] = useState("")
     const [loading, setLoading] = useState(false);
 
+
+    const db = getFirestore();
     useEffect(() => {
       const token = localStorage.getItem('token')
       if(token) {
@@ -23,12 +27,17 @@ function Signup({history}) {
         setLoading(true)
         const auth = getAuth()
         createUserWithEmailAndPassword(auth, email, password)
-        .then(() => {
+        .then((cred) => {
             updateProfile(auth.currentUser, {displayName: name})
             .then(() => history.push('/login'))
             .catch((e) => alert(e.message))
-        }).catch((e) => alert(e.message))
+        })
+        .catch((e) => alert(e.message))
         .finally(() => setLoading(false))
+    }
+
+    onSignUp = async (e) => {
+      e.preventDefault()
     }
 
     return (

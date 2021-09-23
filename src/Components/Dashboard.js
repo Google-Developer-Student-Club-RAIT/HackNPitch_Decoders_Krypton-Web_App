@@ -10,7 +10,7 @@ import bgImg from '../Assets/img/bg-removebg.png'
 
 import NewsApi from '../Components/NewsApi'
 
-import { getFirestore } from "firebase/firestore"
+import { getFirestore } from "@firebase/firestore"
 import { collection, onSnapshot } from "@firebase/firestore";
 
 import { useHistory } from "react-router-dom";
@@ -21,7 +21,7 @@ const Dashboard = () => {
     const auth = getAuth();
     const db = getFirestore();
     const user = auth.currentUser;
-
+    
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSideBarOpen, setIsSidebarOpen] = useState(false);
 
@@ -45,13 +45,13 @@ const Dashboard = () => {
     }, [])
 
     // firestore
-    useEffect(() => {
-        onSnapshot(collection(db,"users"),(snapshot) => {
-            console.log(snapshot.docs.map(doc => {
-                doc.data();
-            }))
-        });
-    }, [])
+    // useEffect(() => {
+    //     onSnapshot(collection(db,"users"),(snapshot) => {
+    //         console.log(snapshot.docs.map(doc => {
+    //             console.log(doc.data())
+    //         }))
+    //     }); 
+    // }, [])
 
     const openMenu = () => {
         if (isMenuOpen === false) {

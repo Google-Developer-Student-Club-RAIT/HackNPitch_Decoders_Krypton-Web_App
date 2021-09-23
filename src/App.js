@@ -1,5 +1,4 @@
 import './App.css';
-import { initializeApp } from "firebase/app";
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import Main from './Pages/main/Main'
 import MainApp  from './Pages/dashboard/MainApp';
@@ -15,6 +14,7 @@ import { GlobalProvider } from './Hooks/GlobalState';
 // firebase
 import Login from './Pages/login/Login'
 import SignUp from './Pages/SignUp/Signup'
+import { initializeApp } from "firebase/app";
 import { getAuth, onAuthStateChanged } from '@firebase/auth';
 
 
