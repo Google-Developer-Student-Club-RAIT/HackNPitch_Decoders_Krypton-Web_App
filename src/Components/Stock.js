@@ -103,17 +103,21 @@ class Stock extends React.Component {
 
       data.push(d);
     }
+    
     const divstyle={
         backgroundColor: "black",
         width: "100%",
     }
-
+    const labelStyle={
+        backgroundColor: "black",
+        textColor: "white",
+    }
     return (
       <div style={divstyle}>
         {/* <h1>Stock Market</h1> */}
         {/* <MDBContainer>
                     <Line data={data} />
-                    </MDBContainer> */}
+        </MDBContainer> */}
         {/* <Line 
                    data={data} 
                    config={config}
@@ -124,9 +128,8 @@ class Stock extends React.Component {
               <CartesianGrid/>
               <XAxis dataKey="student" interval={"preserveStartEnd"} />
               <YAxis type="number" domain={[('dataMin', 'dataMax')]}/>
-              {/* <Legend verticalAlign="top"/> */}
-              <Tooltip cursor={{ stroke: '#28ffbf', strokeWidth: 1 }} />
-              <Line type="line" dataKey="open" stroke="#ffc75f" dot={false} strokeWidth="2" />
+              <Tooltip cursor={{ stroke: '#28ffbf', strokeWidth: 1}} />
+              <Line type="line"  dataKey="open" stroke="#ffc75f" dot={false} strokeWidth="2" />
             </LineChart>
           }
         </ResponsiveContainer>

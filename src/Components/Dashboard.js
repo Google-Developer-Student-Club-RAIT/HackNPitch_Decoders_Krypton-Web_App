@@ -8,6 +8,8 @@ import {Link} from 'react-router-dom'
 import News from "./News";
 import bgImg from '../Assets/img/bg-removebg.png'
 
+import NewsApi from '../Components/NewsApi'
+
 import { useHistory } from "react-router-dom";
 
 const Dashboard = () => {
@@ -85,10 +87,6 @@ const Dashboard = () => {
                     {user ? user.displayName : "Anonymous User"}
                     <i className="fas fa-angle-down px-2"></i>
                 </button>
-                {/* <button className="flex justify-center content-center relative ml-2 text-sm focus:outline-none group" 
-                onClick = {()=> openMenu()}>
-                    <Dropdown />
-                </button> */}
             </div>
             {/* Dropdown component */}
             <div className={`absolute right-10 flex flex-col top-12 z-50  w-30 mt-1 pb-1 bg-gray-800 border border-gray-800 shadow-lg group-focus:flex 
@@ -98,26 +96,13 @@ const Dashboard = () => {
             <div class="flex-grow p-6 bg-black">
             <img src={bgImg} alt="" srcset="" className = "hidden lg:block lg:absolute lg:right-0 mt-10 lg:top-5 lg:opacity-30 lg:w-1/5 "/>
                 <div class="grid lg:grid-cols-3 lg:grid-rows-1 grid-flow-row gap-6">
-                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
-                    <div class="h-80 flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
-                    <div class="h-140 flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white text-4xl pl-4 pt-4 rounded-xl">HEADLINES
-                    <h1 className=" mt-5  text-yellow-300 text-xl"><a href="https://finance.yahoo.com/">YAHOO! FINANCE</a></h1>
-                    <p className=" hover:text-yellow-300 text-xl"><a href="https://finance.yahoo.com/m/0bfe0a68-44fd-3d51-8fac-f16fd3debe05/when-the-stock-market-pulls.html">
-                        When the stock market pulls back</a></p>
-                        <h1 className=" mt-5 text-yellow-300 text-xl"><a href="https://www.cnbc.com/world/?region=world">CNBC.COM</a></h1>
-                    <p className=" hover:text-yellow-300 text-xl"><a href="https://www.cnbc.com/2021/09/22/gold-markets-federal-reserve.html">
-                        Gold inches higher ahead of Fed policy decision</a></p>
-                    <h1 className=" mt-5 text-yellow-300 text-xl"><a href="https://www.livemint.com/">MINT</a></h1>
-                    <p className=" hover:text-yellow-300 text-xl"><a href="https://www.livemint.com/market/ipo/india-likely-to-block-chinese-investment-in-insurance-giant-lic-s-ipo-report-11632303723350.html">
-                        India likely to block Chinese investment in LIC's mega IPO</a></p>
-                        <h1 className="mt-5 text-yellow-300 text-xl"><a href="https://www.livemint.com/">BLOOMBERG | QUINT</a></h1>
-                    <p className="hover:text-yellow-300 text-xl"><a href="https://www.bloombergquint.com/business/india-taps-amazon-microsoft-for-farm-tech-as-modi-eyes-reforms">
-                    Amazon, Microsoft Swoop In on $24 Billion India Farm-Data Trove</a></p>
-                    <h1 className=" mt-5 text-yellow-300 text-xl"><a href="https://www.marketwatch.com/">MARKETWATCH.COM</a></h1>
-                    <p className=" hover:text-yellow-300 text-xl"><a href="https://www.marketwatch.com/story/facebook-overpaid-ftc-fine-as-quid-pro-quo-to-protect-zuckerberg-from-liability-shareholders-claim-11632278039?mod=home-page">
-                        Facebook overpaid FTC fine as ‘quid pro quo’ to protect Zuckerberg from liability, shareholders claim</a></p>
+                    <div class="h-80 w-80 lg:w-auto flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl">{<Balance />}</div>
+                    <div class="h-80 w-80 lg:w-auto flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl" >{<TransactionList/>}</div>
+                    <div class="h-140 w-80 h-80 lg:w-auto flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white text-4xl pl-4 pt-4 rounded-xl overflow-y-scroll">
+                        HEADLINES
+                        <NewsApi/>
                     </div>
-                    <div class="h-75 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Stock />}</div>
+                    <div class="lg:w-full lg:max-h-80 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Stock />}</div>
                 </div>
             </div>
         </div>
