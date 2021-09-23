@@ -103,7 +103,7 @@ const Dashboard = () => {
                     <div class=" h-80 w-80 lg:w-auto flex-grow lg:col-span-1 bg-white bg-opacity-10 text-white rounded-xl overflow-y-auto">{<TransactionList/>}</div>
                     <div class="w-80 lg:w-auto flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white text-4xl pl-4 pt-4 rounded-xl overflow-y-auto" style={headlinestyle}>
                         HEADLINES
-                        <NewsApi/>
+                        {/* <NewsApi/> */}
                     </div>
                     <div class="md:visibility-hidden lg:max-w-2xl flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl justify-items-center">{<Stock />}</div>
                 </div>

@@ -106,7 +106,7 @@ const News = () => {
             </div>
             <div class="flex-grow p-6 bg-black overflow-y-auto">
             <img src={bgImg} alt="" srcset="" className = "hidden lg:block lg:absolute lg:right-0 mt-10 lg:top-5 lg:opacity-30 lg:w-1/5 "/>
-            <div class="grid lg:grid-cols-4 grid-flow-row gap-6 overflow-y-auto h-full">
+            <div class="grid lg:grid-cols-3.5 grid-flow-row gap-5 overflow-y-auto h-full">
                 {(articles.articles !== undefined) ? articles.articles.map((elem) => {
                     return(
                         <div className="p-8 bg-white bg-opacity-10 rounded-lg  text-white">
@@ -140,7 +140,7 @@ const News = () => {
                                 >
                                 {elem.source.name}
                                 </a>
-                                <p className="text-sm font-medium leading-4 text-white hover:text-yellow-300">
+                                <p className="text-sm font-medium leading-4 text-gray-400 hover:text-yellow-300">
                                 Source
                                 </p>
                             </div>
