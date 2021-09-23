@@ -118,7 +118,7 @@ const Dashboard = () => {
                         HEADLINES
                         <NewsApi/>
                     </div>
-                    <div class="md:visibility-hidden lg:max-w-2xl flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl justify-items-center">{<Stock />}</div>
+                    <div class="md:visibility-hidden lg:max-w-2xl flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl justify-items-center">{<Stock searchBar={false} />}</div>
                 </div>
             </div>
         </div>
