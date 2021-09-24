@@ -4,8 +4,8 @@ import logo from '../../Assets/img/kryptonlogo-removebg.png'
 import bgImg from '../../Assets/img/bgxl-removebg.png'
 
 import {getAuth, createUserWithEmailAndPassword, updateProfile} from 'firebase/auth';
-import { getFirestore } from "@firebase/firestore"
-import { collection, onSnapshot } from "@firebase/firestore";
+import { getFirestore , collection, onSnapshot} from "@firebase/firestore"
+
 
 function Signup({history}) {
 
@@ -14,8 +14,8 @@ function Signup({history}) {
     const [password, setPassword] = useState("")
     const [loading, setLoading] = useState(false);
 
-  
-    const db = getFirestore();
+    const db = getFirestore() 
+
     useEffect(() => {
       const token = localStorage.getItem('token')
       if(token) {
@@ -28,16 +28,17 @@ function Signup({history}) {
         const auth = getAuth()
         createUserWithEmailAndPassword(auth, email, password)
         .then((cred) => {
+            // const userId = auth.currentUser.uid;
             updateProfile(auth.currentUser, {displayName: name})
             .then(() => history.push('/login'))
             .catch((e) => alert(e.message))
+
+            // db.collection('users').add(userId).set({
+            //   hellow:"world"
+            // })
         })
         .catch((e) => alert(e.message))
         .finally(() => setLoading(false))
-    }
-
-    onSignUp = async (e) => {
-      e.preventDefault()
     }
 
     return (
