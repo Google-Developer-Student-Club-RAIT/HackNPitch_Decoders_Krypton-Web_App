@@ -139,7 +139,7 @@ To install node@12.22.1
    ```
 Clone the repo
    ```sh
-   git clone https://github.com/GSri30/Fundchain
+   git clone https://github.com/Narottam04/HackNPitch_Decoders_Krypton.git
    ```
 Install NPM packages
    ```sh
@@ -147,19 +147,8 @@ Install NPM packages
    ```
 Run the local server inside the client folder
    ```sh
-   ng serve --open
+   npm start
    ```
-
-
-## Guide to try out our DApp
-
-To actually try out our DApp, there are certain requirements to set up, which include : 
-  * Install Temple wallet in your browser.
-  * Use a standard Tezos faucet to get Testnet ꜩ (required to pay gas, which is required to register an email) [NOTE that this is only a one time spend for a given email]
-    * Network : Flourence Testnet 
-    * RPC :  https://florencenet.smartpy.io/
-    * Lambda View : KT1BbTmNHmJp2NnQyw5qsAExEYmYuUpR2HdX
-  * Enjoy!
 
 
 ## Acknowledgements and References
