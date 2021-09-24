@@ -35,6 +35,10 @@ export const AddTransaction = () => {
       ...transaction,
       newTransaction
     ])
+
+    //clear state for next transaction 
+    setText('')
+    setAmount('')
   }
 
   return (
