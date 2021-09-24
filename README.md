@@ -48,7 +48,7 @@ Krypton provides a watch-list for stocks and also provides relevent financial ne
 ## About the project
 
 <p align="center">
-  <img src="assets/Final.jpg">
+  <img src="src/Assets/img/readmeLaptop.png">
 <p align="center">
     
 Krypton is an online money management system with the aim of making individuals aware about their expediture and make them financially sound by providing them with stock watchlists and news that is relevent to investing and financial advices. The following are the key-words used in our project:
