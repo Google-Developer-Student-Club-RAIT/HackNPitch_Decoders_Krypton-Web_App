@@ -1,11 +1,11 @@
 import { getAuth, signOut } from "@firebase/auth";
 import { useEffect, useState } from "react";
 import Hamburger from '../Assets/svg/Hamburger'
-import { Balance } from "./Balance";
-import { TransactionList } from "./TransactionList";
-import Stock from "./Stock"
+// import { Balance } from "./Balance";
+// import { TransactionList } from "./TransactionList";
+// import Stock from "./Stock"
 import { Link } from 'react-router-dom'
-import News from "./News";
+// import News from "./News";
 import bgImg from '../Assets/img/bg-removebg.png'
 
 import { useHistory } from "react-router-dom";

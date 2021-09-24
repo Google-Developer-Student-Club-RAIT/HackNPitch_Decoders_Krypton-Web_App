@@ -5,13 +5,13 @@ import { Balance } from "./Balance";
 import { TransactionList } from "./TransactionList";
 import Stock from "./Stock"
 import {Link} from 'react-router-dom'
-import News from "./News";
+// import News from "./News";
 import bgImg from '../Assets/img/bg-removebg.png'
 
 import NewsApi from '../Components/NewsApi'
 
-import { getFirestore } from "@firebase/firestore"
-import { collection, onSnapshot } from "@firebase/firestore";
+// import { getFirestore } from "@firebase/firestore"
+// import { collection, onSnapshot } from "@firebase/firestore";
 
 import { useHistory } from "react-router-dom";
 
@@ -19,7 +19,7 @@ const Dashboard = () => {
     const history = useHistory();
 
     const auth = getAuth();
-    const db = getFirestore();
+    // const db = getFirestore();
     const user = auth.currentUser;
     
     const [isMenuOpen, setIsMenuOpen] = useState(false);

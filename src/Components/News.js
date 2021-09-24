@@ -1,9 +1,9 @@
 import {getAuth, signOut } from "@firebase/auth";
 import { useEffect, useState } from "react";
 import Hamburger from '../Assets/svg/Hamburger'
-import { Balance } from "./Balance";
-import { TransactionList } from "./TransactionList";
-import Stock from "./Stock"
+// import { Balance } from "./Balance";
+// import { TransactionList } from "./TransactionList";
+// import Stock from "./Stock"
 import {Link} from 'react-router-dom'
 // import News from "./News";
 import bgImg from '../Assets/img/bg-removebg.png'
@@ -114,6 +114,7 @@ const News = () => {
                             <a
                                 href={elem.url}
                                 target = "_blank"
+                                rel="noreferrer"
                                 className=" text-yellow-300 duration-200"
                                 aria-label="Category"
                             >
@@ -123,6 +124,7 @@ const News = () => {
                             <a
                             href={elem.url}
                             target = "_blank"
+                            rel="noreferrer"
                             aria-label="Article"
                             title="Jingle Bells"
                             className="inline-block mb-3 text-2xl font-bold leading-7 text-white "
@@ -134,6 +136,7 @@ const News = () => {
                                 <a
                                 href={elem.url}
                                 target = "_blank"
+                                rel="noreferrer"
                                 aria-label="Author"
                                 title="Author"
                                 className="font-semibold text-white hover:text-yellow-300"

@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import Hamburger from '../Assets/svg/Hamburger'
 import { Balance } from "./Balance";
 import { TransactionList } from "./TransactionList";
-import Stock from "./Stock"
+// import Stock from "./Stock"
 import {Link} from 'react-router-dom'
-import News from "./News";
+// import News from "./News";
 import bgImg from '../Assets/img/bg-removebg.png'
 import { Expense } from "./Expense";
 import { AddTransaction } from "./AddTransaction";
@@ -114,7 +114,7 @@ const EWallet = () => {
                     <div class="overflow-y-scroll flex-grow lg:row-span-2 bg-white bg-opacity-10 text-white rounded-xl" style={listStyle}>{<TransactionList/>}</div>
                     <div class="h-75 flex-grow lg:col-span-2 bg-white bg-opacity-10 text-white rounded-xl">{<Expense />}</div>
                 </div>
-            </div>
+            </div> 
         </div>
 
 </div>

@@ -2,8 +2,8 @@ import './App.css';
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 import Main from './Pages/main/Main'
 import MainApp  from './Pages/dashboard/MainApp';
-import { useEffect } from 'react';
-import { useState } from 'react/cjs/react.development';
+// import { useEffect } from 'react';
+// import { useState } from 'react/cjs/react.development';
 import EWallet  from './Components/EWallet';
 import { StockInsights } from './Components/StockInsights';
 import News from './Components/News';
@@ -15,7 +15,7 @@ import { GlobalProvider } from './Hooks/GlobalState';
 import Login from './Pages/login/Login'
 import SignUp from './Pages/SignUp/Signup'
 import { initializeApp } from "firebase/app";
-import { getAuth, onAuthStateChanged } from '@firebase/auth';
+// import { getAuth, onAuthStateChanged } from '@firebase/auth';
 
 
 const firebaseConfig = {
