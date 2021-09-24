@@ -28,10 +28,9 @@ Aimed to cater young individuals the mission is to make financial literacy, an i
     <li><a href="#technologies-used">Technologies used</a></li>
     <li><a href="#how-we-built-it">How we built it</a></li>
     <li><a href="#challenges-we-ran-into">Challenges we ran into</a></li>
-    <!-- <li><a href="#accomplishments-that-we're-proud-of">Accomplishments</a></li> -->
+    
     <li><a href="#whats-next-for-fundchain">What's next?</a></li>
     <li><a href="#guide-to-setup-the-project-locally">Guide to setup the project locally</a></li>
-    <li><a href="#guide-to-try-out-our-dapp">Guide to try out our DApp</a></li>
     <li><a href="#acknowledgements-and-references">Acknowledgements and References</a></li>
   </ol>
 </details>
@@ -78,18 +77,18 @@ Having personal finances in-check is necessary and hence the there is a personal
 A list of all the references and resources we used to achieve (partially) our goal are listed in the acknowledgements.
 ## Technologies used
     
-<p align="center">
-    <a href="https://reactjs.org/><img src="assets/react.png" width="40%" height="40%" </a>
+  <p>
+    <a href="https://reactjs.org/><img src="src/Assets/img/react.png" width="40%" height="40%" ></a>
        <p align="center" float="left">
-<a href="https://www.netlify.com/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
-<a href="https://firebase.google.com/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
-<a href="https://www.postman.com/product/api-repository/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
-<a href="https://www.alphavantage.co/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>                                                                                                 
+<a href="https://www.netlify.com/"><img src="src/Assets/img/netlify.png"  width="30%" height="30%"></a>
+<a href="https://firebase.google.com/"><img src="src/Assets/img/firebase.png"  width="30%" height="30%"></a>
+<a href="https://www.postman.com/product/api-repository/"><img src="src/Assets/img/postman.png"  width="30%" height="30%"></a>
+<a href="https://www.alphavantage.co/"><img src="src/Assets/img/alphavantage.png"  width="30%" height="30%"></a>                                                                                                 
 </p>
 
     
 React.js as the base library along with tailwind css<br/>
-Firebase for the authentication of the users so that every users infformation can be saved<br/>
+Firebase for the authentication of the users so that every users information can be saved<br/>
 Netlify to host the react app <br/>
 Postman Api for financial news <br/>
 AlphaVantage for Stocks overview <br/>
@@ -109,7 +108,6 @@ Then went with designing and developing UI using ReactJs & Tailwind CSS (with he
 The frontend developers were not familiar with tailwind CSS. So it took a while to build frontend and to polish it out.
 
 This is our first time to integrate firebase authentication and different api's with a web application.
-
 
 We intially thought of making a flutter app but were not able to proceed due to lack of resources.
 
@@ -154,8 +152,7 @@ Run the local server inside the client folder
 
 
 ## Acknowledgements and References
-
 * [AlphaVantage](https://www.alphavantage.co/) Stocks Api.
-
-* <a href="ttps://saurav.tech/NewsAPI/top-headlines/category/business/in.json">Financial News Api from postman </a>.
+* [PostmanApi](https://www.postman.com/product/api-repository/) News Api
+* [Freepik](https://www.freepik.com/)Illustrations
 

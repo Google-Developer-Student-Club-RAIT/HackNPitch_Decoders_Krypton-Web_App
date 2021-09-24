@@ -47,8 +47,7 @@ export const Service = () => {
               </span>{' '}
             </h2>
             <p className="text-base text-gray-200 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque rem aperiam, eaque ipsa quae.
+              We provide the best services possible for making your journey to financial growth easier and more reliable with the most curated services for you
             </p>
           </div>
           {/* our services */}
@@ -60,21 +59,21 @@ export const Service = () => {
             <div className = "">
               <div className = "bg-white bg-opacity-10  rounded-xl flex flex-col justify-center items-center mt-8  md:mt-0">
                 <img src={Ethereum} alt="" srcset=""  className = "w-1/2"/>
-                <h2 className = "text-white uppercase font-bold pb-8 text-center">Stocks overview</h2>
+                <h2 className = "text-white uppercase font-bold pb-8 text-center">Stock Overview</h2>
               </div>
               <div className = "bg-white bg-opacity-10  rounded-xl mt-8 flex flex-col justify-center items-center">
                 <img src={PieChart} alt="" srcset=""  className = "w-1/2"/>
-                <h2 className = "text-white uppercase font-bold pb-8 text-center">investment radar</h2>
+                <h2 className = "text-white uppercase font-bold pb-8 text-center">Investment Radar</h2>
               </div>
             </div>
             <div>
               <div className = "bg-white bg-opacity-10  rounded-xl flex flex-col justify-center items-center mt-8 md:mt-0">
                 <img src={Wallet} alt="" srcset=""  className = "w-1/2"/>
-                <h2 className = "text-white uppercase font-bold pb-8 text-center ">Financial news</h2>
+                <h2 className = "text-white uppercase font-bold pb-8 text-center ">Financial News</h2>
               </div>
               <div className = "bg-white bg-opacity-10  rounded-xl mt-8 flex flex-col justify-center items-center">
                 <img src={CreditCard} alt="" srcset=""  className = "w-1/2"/>
-                <h2 className = "text-white uppercase font-bold pb-8 text-center">financial knowledge</h2>
+                <h2 className = "text-white uppercase font-bold pb-8 text-center">Financial Knowledge</h2>
               </div>
             </div>
           </div>

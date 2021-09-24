@@ -15,7 +15,7 @@ export const Content = () => {
               <br className="hidden md:block " />
               Personal Finance Management
             </h2>
-            <p className="mb-5 z-50 text-base text-gray-500 md:text-lg">
+            <p className="mb-5 z-50 text-base text-gray-300 md:text-lg">
               Making people more aware about their transactions and making people more financially 
               sound as we move towards a progessive and more informed future
             </p>
