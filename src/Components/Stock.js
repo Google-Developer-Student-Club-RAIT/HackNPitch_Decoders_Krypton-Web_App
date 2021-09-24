@@ -8,6 +8,8 @@ import {
   YAxis,
   CartesianGrid
 } from "recharts";
+import searchBar from '../Assets/img/searchBar.png'
+
 
 class Stock extends React.Component {
   constructor(props) {
@@ -98,21 +100,31 @@ class Stock extends React.Component {
         </ResponsiveContainer>
         <div class="p-8" class={`${this.state.setSearchBar}`}>
           <div class="bg-white flex items-center rounded-full shadow-xl">
-            <input class="rounded-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search Stock"
+            <input list="org" name="org" id="org" class="rounded-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search Stock"
               value={this.state.text}
               onChange={this.handleChange}
             />
             {console.log("text-", this.state.text)}
             <div class="p-4">
-              <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center"
+              <button class="bg-transparent text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center"
                 onClick={this.handleSubmit} >
-                icon
+                <img src={searchBar}/>
               </button>
             </div>
           </div>
+          <div>
+            <datalist id="org">
+              <option value="Edge">
+              </option><option value="MSFT">
+              </option><option value="AAPL">
+              </option><option value="TSLA">
+              </option><option value="NDAQ">
+              </option><option value="RELI">
+              </option></datalist>
+          </div>
         </div>
-
-      </div>
+          </div>
+      
 
 
     );
