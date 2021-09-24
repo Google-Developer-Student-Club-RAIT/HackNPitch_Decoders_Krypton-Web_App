@@ -66,7 +66,7 @@ Having the overview of the best performing stocks is a good practice as it impro
 News plays a very important role in how people invest and why people invest.Financial news is the key to understanding the stock market sentiment and also making the users aware about the different changes and reforms happening globally.
     
 ### Investment Radar
-
+Showing an Investment Radar to keep a check on the trending stocks and to keep a tab on the recent changes is the best way to start on the investment path and this is provided on the dashboard as well as a dedicated stock insight tab.    
 
 ### Financial Knowledge
 Having personal finances in-check is necessary and hence the there is a personal finance tracker which helps the user to keep a tab of their transactions, which is the first step towards financial growth and literacy.    
@@ -83,48 +83,50 @@ A list of all the references and resources we used to achieve (partially) our go
        <p align="center" float="left">
 <a href="https://www.netlify.com/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
 <a href="https://firebase.google.com/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
+<a href="https://www.postman.com/product/api-repository/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
+<a href="https://www.alphavantage.co/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>                                                                                                 
 </p>
 
     
 React.js as the base library along with tailwind css<br/>
 Firebase for the authentication of the users so that every users infformation can be saved<br/>
 Netlify to host the react app <br/>
+Postman Api for financial news <br/>
+AlphaVantage for Stocks overview <br/>
 
 
 ## How we built it
 
-First we came up with a problem statement, then went in search of best blockchain technology that can be used. 
-Then we followed with building a basic prototype of all the features that can be included and also specifically brainstormed for an hour to find a suitable verification algorithm. 
+First we came up with a problem statement and started to design and prototype the basic functionality of the web app on Adobe Xd.
 
-Then went with designing UI accordingly (with help of few resources mentioned in the last section). 
+Then we followed with building a basic prototype of all the features that can be included. 
+
+Then went with designing and developing UI using ReactJs & Tailwind CSS (with help of few resources mentioned in the last section). 
 
 
 ## Challenges we ran into
 
-The frontend developers are only familiar with angular. So it took a while to build frontend.
+The frontend developers were not familiar with tailwind CSS. So it took a while to build frontend and to polish it out.
 
-This is our first time to integrate SAWO labs with a web application.
+This is our first time to integrate firebase authentication and different api's with a web application.
 
-We had a very less time to finish the project.
 
 We intially thought of making a flutter app but were not able to proceed due to lack of resources.
 
-Our entire team is quite new to blockchain technology and this is our first attempt to make a DApp using blockchain technology. So choosing an appropriate blockchain for implementing our idea was very challenging. After brainstorming for some time, we found Tezos to be a suitable blockchain as it is a best suit for public distributed ledger applications as it has a unique on-chain governance mechanism.
+Responsiveness was an issue which was solved. 
 
-<!-- ## Accomplishments that we're proud of
-
-The 'Conditional Funding' is a unique feature of its own kind.
-
-We designed a complete consensus to have some kind of verification mechanism to avoid the misleading fund raisings. -->
-
-
-## What's next for Fundchain
+## What's next for Krypton
 
 Due to the time constraint of the hackathon, many things were accomplished only till half way. These include :
 
-- Unique Digital Badges : We are planning to build a feature where after reaching a certain XP, we assign a unique digital badge as an NFT (using FA2) to the funder profile, representing his contributions. Also updating his/her avatar.
-- Field Workers : Currently the system doesn't contain any distinction between a normal funder and field worker.
-- CRON jobs : Introducing CRON jobs to automate the claims and re-claims (which are currently being triggered manually by a user using 'claim' and 'reclaim' options) based on either “deadline” or “number of dislikes” for a particular fund raising post.
+- Unique Digital Cards: We are planning to build a feature where every user will be able to access a digital card that features all their acheivements
+ based on their current and previous investments.
+
+- Goal Tracker: To add a roadmap so that, user can set a goal and track their progress of different investment.
+
+- More Investment Option: Currently we only have limited number of stocks and investments options and we intend to increase them by adding sections like mutual funds, bonds etc. 
+
+- More responsive & optimized UI
 
 
 ## Guide to setup the project locally
@@ -153,13 +155,7 @@ Run the local server inside the client folder
 
 ## Acknowledgements and References
 
-* [Infura](https://infura.io/) standard IPFS API for getting access to the IPFS networks.
+* [AlphaVantage](https://www.alphavantage.co/) Stocks Api.
 
-* <a href="https://coinlayer.com/">Coin Layer API </a> to get the live exchange rates of XTZ.
+* <a href="ttps://saurav.tech/NewsAPI/top-headlines/category/business/in.json">Financial News Api from postman </a>.
 
-* [ngx-admin](https://github.com/akveo/ngx-admin) for base angular components.
-
-* <a href='https://www.freepik.com/vectors/logo'>Logo vector created by pch.vector - www.freepik.com</a>
-
-
-* <a href="https://github.com/othneildrew/Best-README-Template"> README template </a>
