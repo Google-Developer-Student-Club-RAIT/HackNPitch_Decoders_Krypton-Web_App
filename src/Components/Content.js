@@ -16,9 +16,8 @@ export const Content = () => {
               Personal Finance Management
             </h2>
             <p className="mb-5 z-50 text-base text-gray-500 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+              Making people more aware about their transactions and making people more financially 
+              sound as we move towards a progessive and more informed future
             </p>
             <div className="mb-10  md:mb-16 lg:mb-20">
               <Link

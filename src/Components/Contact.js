@@ -8,13 +8,13 @@ export const Contact = () => {
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <div className="flex flex-col items-center justify-between xl:flex-row">
             <div className="w-full max-w-xl mb-12 xl:pr-16 xl:mb-0 xl:w-7/12">
-              <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudan, totam rem aperiam, eaque ipsa quae.
+              <p className="max-w-xl mb-6 text-base text-gray-200 md:text-4xl">
+              GOT ANY QUESTIONS<br/>OR SUGGESTIONS?<br/>
               </p>
-              <p className="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudan, totam rem aperiam, eaque ipsa quae.
+              <p className="max-w-xl mb-4 text-base text-gray-200 md:text-4xl">
+              GET IN TOUCH WITH<br/> 
+              US AND WE'LL GET <br/>
+              BACK TO YOU
               </p>
             </div>
             <div className="w-full max-w-xl xl:px-8 xl:w-5/12">

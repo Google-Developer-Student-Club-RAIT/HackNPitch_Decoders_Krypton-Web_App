@@ -13,12 +13,10 @@ export const Footer = () => {
             </a>
             <div className="mt-6 lg:max-w-sm">
               <p className="text-sm text-gray-200">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
-              </p>
-              <p className="mt-4 text-sm text-gray-200">
-                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.
+              Krypton is an online money management system with the aim of 
+              making individuals aware about their expenditure and 
+              to show investment opportunities, financial news and 
+              stock overview to make them financially sound and aware.
               </p>
             </div>
           </div>
@@ -40,16 +38,16 @@ export const Footer = () => {
             <div className="flex">
               <p className="mr-1 text-gray-200">Email:</p>
               <a
-                href="mailto:info@lorem.mail"
+                href="mailto:furvenzi@gmail.com"
                 aria-label="Our email"
                 title="Our email"
                 className="text-white pl-2"
               >
-                info@lorem.mail
+                info@krypton.com
               </a>
             </div>
             <div className="flex">
-              <p className="mr-1 text-gray-200">Address:</p>
+              <p className="mr-1 text-gray-200">Locate Us:</p>
               <a
                 href="https://www.google.com/maps"
                 target="_blank"
@@ -58,17 +56,17 @@ export const Footer = () => {
                 title="Our address"
                 className="text-white pl-2"
               >
-                312 Lovely Street, NY
+                Mumbai,India
               </a>
             </div>
           </div>
           <div>
             <span className="text-base font-bold tracking-wide text-gray-300">
-              Social
+              Socials
             </span>
             <div className="flex items-center mt-1 space-x-3">
               <a
-                href="/"
+                href="https://www.twitter.com"
                 className="text-gray-200 transition-colors duration-300 hover:text-yellow-300"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -76,7 +74,7 @@ export const Footer = () => {
                 </svg>
               </a>
               <a
-                href="/"
+                href="https://www.instagram.com"
                 className="text-gray-200 transition-colors duration-300 hover:text-yellow-300"
               >
                 <svg viewBox="0 0 30 30" fill="currentColor" className="h-6">
@@ -85,7 +83,7 @@ export const Footer = () => {
                 </svg>
               </a>
               <a
-                href="/"
+                href="https://www.facebook.com"
                 className="text-gray-200 transition-colors duration-300 hover:text-yellow-300"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="h-5">
@@ -94,14 +92,13 @@ export const Footer = () => {
               </a>
             </div>
             <p className="mt-4 text-sm text-gray-200">
-              Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-              spare ribs salami.
+              Follow us on our social media accounts to stay updated on the latest updates from Krypton
             </p>
           </div>
         </div>
         <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row">
           <p className="text-sm text-gray-100">
-            © Copyright 2020 Lorem Inc. All rights reserved.
+          © Copyright 2021 Krypton .Inc All Right Reserved 
           </p>
           <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
             <li>
