@@ -89,6 +89,8 @@ A list of all the references and resources we used to achieve (partially) our go
 React.js as the base library along with tailwind css<br/>
 Firebase for the authentication of the users so that every users infformation can be saved<br/>
 Netlify to host the react app <br/>
+Postman Api for financial news <br/>
+Alphabantage for Stocks overview <br/>
 
 
 ## How we built it
@@ -153,13 +155,8 @@ Run the local server inside the client folder
 
 ## Acknowledgements and References
 
-* [Infura](https://infura.io/) standard IPFS API for getting access to the IPFS networks.
+* [AlphaVantage](https://www.alphavantage.co/) Stocks Api.
 
-* <a href="https://coinlayer.com/">Coin Layer API </a> to get the live exchange rates of XTZ.
-
-* [ngx-admin](https://github.com/akveo/ngx-admin) for base angular components.
-
-* <a href='https://www.freepik.com/vectors/logo'>Logo vector created by pch.vector - www.freepik.com</a>
-
+* <a href="ttps://saurav.tech/NewsAPI/top-headlines/category/business/in.json">Financial News Api from postman </a>.
 
 * <a href="https://github.com/othneildrew/Best-README-Template"> README template </a>
