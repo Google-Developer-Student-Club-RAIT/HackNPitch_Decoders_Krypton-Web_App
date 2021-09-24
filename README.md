@@ -28,8 +28,6 @@ Aimed to cater young individuals the mission is to make financial literacy, an i
     <li><a href="#technologies-used">Technologies used</a></li>
     <li><a href="#how-we-built-it">How we built it</a></li>
     <li><a href="#challenges-we-ran-into">Challenges we ran into</a></li>
-    
-    <li><a href="#whats-next-for-fundchain">What's next?</a></li>
     <li><a href="#guide-to-setup-the-project-locally">Guide to setup the project locally</a></li>
     <li><a href="#acknowledgements-and-references">Acknowledgements and References</a></li>
   </ol>
@@ -70,20 +68,17 @@ Showing an Investment Radar to keep a check on the trending stocks and to keep a
 ### Financial Knowledge
 Having personal finances in-check is necessary and hence the there is a personal finance tracker which helps the user to keep a tab of their transactions, which is the first step towards financial growth and literacy.    
 
-<p align="center">
-<img src="assets/claim.png">
-
 
 A list of all the references and resources we used to achieve (partially) our goal are listed in the acknowledgements.
 ## Technologies used
     
-  <p>
-    <a href="https://reactjs.org/><img src="src/Assets/img/react.png" width="40%" height="40%" ></a>
-       <p align="center" float="left">
-<a href="https://www.netlify.com/"><img src="src/Assets/img/netlify.png"  width="30%" height="30%"></a>
-<a href="https://firebase.google.com/"><img src="src/Assets/img/firebase.png"  width="30%" height="30%"></a>
-<a href="https://www.postman.com/product/api-repository/"><img src="src/Assets/img/postman.png"  width="30%" height="30%"></a>
-<a href="https://www.alphavantage.co/"><img src="src/Assets/img/alphavantage.png"  width="30%" height="30%"></a>                                                                                                 
+<p align="center" float="left">
+      
+<a href="https://www.react.org/"><img src="src/Assets/img/react.png"  width="10%" height="10%"></a>
+<a href="https://www.netlify.com/"><img src="src/Assets/img/netlify.png"  width="10%" height="10%"></a>
+<a href="https://firebase.google.com/"><img src="src/Assets/img/firebase.png"  width="10%" height="10%"></a>
+<a href="https://www.postman.com/product/api-repository/"><img src="src/Assets/img/postman.png"  width="10%" height="10%"></a>
+<a href="https://www.alphavantage.co/"><img src="src/Assets/img/alphavantage.png"  width="10%" height="10%"></a>                                                                                                 
 </p>
 
     
@@ -154,5 +149,5 @@ Run the local server inside the client folder
 ## Acknowledgements and References
 * [AlphaVantage](https://www.alphavantage.co/) Stocks Api.
 * [PostmanApi](https://www.postman.com/product/api-repository/) News Api
-* [Freepik](https://www.freepik.com/)Illustrations
+* [Freepik](https://www.freepik.com/) Illustrations
 
