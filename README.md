@@ -39,13 +39,14 @@ Aimed to cater young individuals the mission is to make financial literacy, an i
 
 
 ## Inspiration
+Obtaining financial literacy is one of the most important things an individual can do to ensure prolonged financial stability. 
+Strong financial knowledge and decision-making skills help people weigh options and make informed choices for their financial situations, such as deciding how and when to save and spend, comparing costs before a big purchase, and planning for retirement or other long-term savings. 
 
-The major doubt almost everyone has before using a fundraising platform is how trustworthy are they? Is the funding amount reaching the needy? If so, how much of it? A lot of doubts arise when using such platforms.
+This is where Krypton comes in, to build a habit for being accountable for the income and expenses and 
 
-Almost all the fundraising platforms that are in the market today, either collect some percent of the total funds the organizations receive or have their own premium plans for the users to use their platform. Also, almost all of these have a single point of failure workflow. Since platforms like these only require a mode of communication and fund transfer between two parties, eliminating the central power systems which act as a single point of failures i.e. there was a requirement to bring a decentralization in the whole process.
+While investing in stock markets has become more popular in recent times, overall penetration remains low — only 2.78 crore Indians invest in the stock markets, which is around 2% of the country’s population. In comparison, over 50% of Americans own stocks. This is a mind set that can be changes if people are exposed to topics like investments and stocks which is a great financial practice. 
 
-This is the major challenge Fundchain solves! We came up with the idea of a decentralized app that connects the donor to the needy directly without any involvement of a third party. In this system, since we’re relying on everyone, we effectively rely on no one.
-
+Krypton provides a watch list for stocks and also provides relevent financial news and insights so that they have a mind set of using money wisely.
 
 ## About the project
 
@@ -53,9 +54,9 @@ This is the major challenge Fundchain solves! We came up with the idea of a dece
   <img src="assets/Final.jpg">
 <p align="center">
     
-Fundchain is a decentralized application that directly connects the funders to the needy. The following are the key-words used in our project:
+Krypton is an online money management system with the aim of making individuals aware about their expediture and make them financially sound by providing them with stock watchlists and news that is relevent to investing and financial advices. The following are the key-words used in our project:
 
-### Upvote-Downvote
+### 
 Each organization has an upvote feature for other users to show support and a downvote feature to report an organization as spam. A little amount of gas fee will used for using this feature.
       
 ### Conditional Fund
@@ -91,33 +92,22 @@ This represents the reputation of the organization from the number of upvotes/do
 ### Number of people upvoted or downvoted is not visible
 This ensures that the decision taken by the validator solely depends upon only himself and his verification work.
 
-### Motivation behind using SAWO labs
-
-Since our entire workflow is dependent upon a decentralized mechanism, a traditional login method using passwords wasn’t the best way. But this would certainly make the site vulnerable to spam. Also, we were required to map user email IDs with their wallet IDs (one to many mapping). 
-
-So there was a requirement of a way where we were required to ask users for their email ID and have appropriate auth mechanism (again not traditional login as the system was designed to be a decentralized system)
-
-So, we thought the best suit of an auth model in our workflow is to have some kind of a password-less login and at the same time need some mechanism to verify the email ID which user enters. After some research, we found SAWO labs api can be used to achieve the same! SAWO provides a way for the users to login without using a password and at the same time eliminates the spam using its own auth model.
-
-
 
 A list of all the references and resources we used to achieve (partially) our goal are listed in the acknowledgements.
 ## Technologies used
     
 <p align="center">
-<a href="https://tezos.com/"><img src="assets/tezos-bg.png"   width="40%" height="40%"></a>
-<p align="center" float="left">
-<a href="https://smartpy.io/"><img src="assets/smartpy.png" width="30%" height="30%"></a>
-<a href="https://angular.io/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
+    <a href="https://reactjs.org/><img src="assets/react.png" width="40%" height="40%" </a>
+       <p align="center" float="left">
+<a href="https://www.netlify.com/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
+<a href="https://firebase.google.com/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
 </p>
-<p align="center" float="left">
-<a href="https://ipfs.io/"><img src="assets/ipfs.png" width="30%" height="30%"></a>
-<a href="https://sawolabs.com/"><img src="assets/sawo.jpeg"  width="30%" height="30%"></a>
-</p>
+
     
-💲  Tezos - Evolutionary, revolutionary, and everything in-between. <br/>
-📷 IPFS is a peer-to-peer hypermedia protocol designed to preserve and grow humanity's knowledge. <br/>
-🔐 SAWO is the only user-authentication tool that developers would crave for. <br/>
+React.js as the base library along with tailwind css<br/>
+Firebase for the authentication of the users so that every users infformation can be saved<br/>
+Netlify to host the react app <br/>
+
 
 ## How we built it
 
