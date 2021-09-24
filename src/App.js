@@ -34,15 +34,15 @@ initializeApp(firebaseConfig);
 
 function App() {
 
-  const [user, setUser] = useState(null)
+  // const [user, setUser] = useState(null)
 
-  useEffect(() => {
-    const auth = getAuth()
-    onAuthStateChanged(auth, user => {
-      setUser(user)
-    })
+  // useEffect(() => {
+  //   const auth = getAuth()
+  //   onAuthStateChanged(auth, user => {
+  //     setUser(user)
+  //   })
 
-  },[])
+  // },[])
 
   return (
     <>
