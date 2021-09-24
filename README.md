@@ -66,7 +66,7 @@ Having the overview of the best performing stocks is a good practice as it impro
 News plays a very important role in how people invest and why people invest.Financial news is the key to understanding the stock market sentiment and also making the users aware about the different changes and reforms happening globally.
     
 ### Investment Radar
-
+Showing an Investment Radar to keep a check on the trending stocks and to keep a tab on the recent changes is the best way to start on the investment path and this is provided on the dashboard as well as a dedicated stock insight tab.    
 
 ### Financial Knowledge
 Having personal finances in-check is necessary and hence the there is a personal finance tracker which helps the user to keep a tab of their transactions, which is the first step towards financial growth and literacy.    
@@ -83,6 +83,8 @@ A list of all the references and resources we used to achieve (partially) our go
        <p align="center" float="left">
 <a href="https://www.netlify.com/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
 <a href="https://firebase.google.com/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
+<a href="https://www.postman.com/product/api-repository/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>
+<a href="https://www.alphavantage.co/"><img src="assets/angular-bg.png"  width="30%" height="30%"></a>                                                                                                 
 </p>
 
     
