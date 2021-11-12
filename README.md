@@ -11,9 +11,8 @@ Aimed to cater young individuals the mission is to make financial literacy, an i
   <p align="center">
     <a href="https://krypton1.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/Narottam04/Krypton/issues">Report Bug</a>
+    <a href="https://github.com/Google-Developer-Student-Club-RAIT/HackNPitch_Decoders_Krypton-Web_App/Contributing.md">Read Contribution Guidelines</a>
     ·
-    <a href="https://github.com/Narottam04/Krypton/issues">Request Feature</a>
   </p>
 </p>
 
